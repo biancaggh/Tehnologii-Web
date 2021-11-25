@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="landing.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="https://www.iconsdb.com/icons/preview/white/gun-5-xxl.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Montserrat:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+        <title> Terrorism | Welcome </title>
+    </head>
+    
+    <body>
+        <nav>
+            <div>
+                <img src="photos/logoo.png" id="logo" alt="TeW">
+            </div>
+        </nav>
+        <div class="container">
+            <div class="banner-text">
+                <h1>TeW</h1>
+                <p>Learn more</p>
+            </div>
+            <div class="btns">
+                <button class="btn login-btn">Login</button>
+                <button class="btn signup-btn">Sign up</button>
+            </div>
+        </div>
+        <div class="form-container" >
+            <div class="signup-form-wrapper modal">
+                <div class="x-btn signup-x">
+                    &times;
+                </div>
+                <div class="form-header">
+                    <h1>TeW</h1>
+                    <h3>Join Us</h3>
+                </div>
+                <form class="form">
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="First Name"/>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Last Name"/>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="Email"/>
+                        </div><div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username"/>
+                        </div><div class="input-group">
+                            <i class="fas fa-key"></i>
+                            <input type="text" placeholder="Password"/>
+                        </div>
+                        <button type="button"><a href="home.html">Sign Up</a></button>
+                </form>
+            </div>
+            <div class="login-form-wrapper modal" >
+                <div class="x-btn login-x">
+                    &times;
+                </div>
+                <div class="form-header">
+                    <h1>TeW</h1>
+                    <h3>Welcome Back</h3>
+                </div>
+                <form class="form">
+                        <div class="input-group">
+                            <i class="fa fa-fw fa-user"></i>
+                            <input type="text" placeholder="Username"/>
+                        </div><div class="input-group">
+                            <i class="fa fa-fw fa-key"></i>
+                            <input type="text" placeholder="Password"/>
+                        </div>
+                        <button type="button"><a href="home.html">Login</a></button>
+                </form>
+            </div>
+        </div>
+    
+       <script>
+           const signupModal = document.querySelector(".signup-form-wrapper");
+           const loginModal = document.querySelector(".login-form-wrapper");
+           const signupBtn = document.querySelector(".signup-btn");
+           const loginBtn = document.querySelector(".login-btn");
+           const signupX = document.querySelector(".signup-x");
+           const loginX = document.querySelector(".login-x");
+           const formContainer = document.querySelector(".form-container");
+
+           signupBtn.addEventListener('click', () => {
+               signupModal.classList.add("display");
+               formContainer.classList.add('disable');
+           });
+           loginBtn.addEventListener('click', () => {
+               loginModal.classList.add("display");
+               formContainer.classList.add('disable');
+           });
+           signupX.addEventListener('click', () => {
+               signupModal.classList.remove("display");
+               formContainer.classList.remove('disable');
+           });
+           loginX.addEventListener('click', () => {
+               loginModal.classList.remove("display");
+               formContainer.classList.remove('disable');
+           });
+
+       </script>
+    </body>
+
+</html> 

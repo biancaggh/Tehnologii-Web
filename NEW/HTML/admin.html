@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Terrorism | Admin Mode </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="admin.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="menu.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://www.iconsdb.com/icons/preview/white/gun-5-xxl.png" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Montserrat:300,400,600"
+          rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav" onclick="onClickBoth()">
+                <li><a href="home.html"><i class="fa fa-fw fa-home">Home</i></a></li>
+                <li><a href="weapons.html"><i class="fa fa-fw fa-bomb">Weapons</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-bar-chart-o">Statistics</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-exclamation-circle">Worst Attacks</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-user">User</i></a></li>
+                <li><a href="admin.html"><i class="fa fa-fw fa-user-secret">Admin</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-line-chart">About</i></a></li>
+                <li><a href=""><i class="fa fa-gw fa-heart"> Team</i></a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search..">
+            <a class="search-btn" href="">
+                <i class="fa fa-fw fa-search"></i>
+            </a>
+        </div>
+        <div class="container">
+            <div class="banner-text">
+                <h1>Admin</h1>
+                <p>Mode</p>
+            </div>
+            <div class="btns">
+                <button class="btn attack-btn">Add Attack</button><br>
+                <button class="btn weapon-btn">Add Weapon</button>
+            </div>
+        </div>
+        <div class="form-container" >
+            <div class="weapon-form-wrapper modal">
+                <div class="x-btn weapon-x">
+                    &times;
+                </div>
+                <div class="form-header">
+                    <h1>Add</h1>
+                    <h3>New Weapons</h3>
+                </div>
+                <form class="form">
+                    <label for="arsenal">Choose a category of weapons:</label><br>
+                    <select id="weapons_type" onchange="changeOptions(this)">
+                        <option value="f0"></option>
+                        <option value="f1" >Meele Weapons</option>
+                        <option value="f2">Pistols</option>
+                        <option value="f2">Shotguns</option>
+                        <option value="f2" >Rifles</option>
+                        <option value="f2">Machine Guns</option>
+                        <option value="f4">Explosives</option>
+                        <option value="f3">Anti-tank Weapons</option>
+                    </select>
+                    <div class="input-group">
+                        <input type="text" id="blade_l" placeholder="Blade Length">
+                        <input type="text" id="steel" placeholder="Steel">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="handle" placeholder="Handle">
+                        <input type="text" id="place_g" placeholder="Place of Origin">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="typo" placeholder="Type">
+                        <input type="text" id="calibre_g" placeholder="Calibre">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="cartridge_g" placeholder="Cartridge">
+                        <input type="text" id="barrel_g" placeholder="Barrel Length">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="effect_g" placeholder="Effective Range">
+                        <input type="text" id="feed_g" placeholder="Feeding System">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="mat_g" placeholder="Material">
+                        <input type="text" id="warhead_at" placeholder="Warhead">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="diam_at" placeholder="Diameter">
+                        <input type="text" id="engine_at" placeholder="Engine">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="filling_ex" placeholder="Filling">
+                        <input type="text" id="det" placeholder="Detonation mechanism">
+                    </div>
+                    <div class="wrapper">
+                        <div class="file-upload">
+                        <input type="file" />
+                        <i class="fa fa-arrow-up"></i>
+                        </div>
+                    </div>
+                    <button type="button"><a href="home.html">Add</a></button>
+                </form>
+            </div>
+            <div class="attack-form-wrapper modal" >
+                <div class="x-btn attack-x">
+                    &times;
+                </div>
+                <div class="form-header">
+                    <h1>Add</h1>
+                    <h3>New Attack</h3>
+                </div>
+                <form class="form">
+                        <div class="input-group">
+                            <input type="text" placeholder="Place"/>
+                        </div>
+                        <div class="input-group">
+                            <input type="date" placeholder="Date"/>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="Details"/>
+                        </div>
+                        <div class="wrapper">
+                            <div class="file-upload">
+                            <input type="file" />
+                            <i class="fa fa-arrow-up"></i>
+                            </div>
+                        </div>
+                        <button type="button"><a href="home.html">Add</a></button>
+                </form>
+            </div>
+        </div>
+        <script>
+            const weaponModal = document.querySelector(".weapon-form-wrapper");
+            const attackModal = document.querySelector(".attack-form-wrapper");
+            const weaponBtn = document.querySelector(".weapon-btn");
+            const attackBtn = document.querySelector(".attack-btn");
+            const weaponX = document.querySelector(".weapon-x");
+            const attackX = document.querySelector(".attack-x");
+            const formContainer = document.querySelector(".form-container");
+
+            weaponBtn.addEventListener('click', () => {
+                weaponModal.classList.add("display");
+                formContainer.classList.add('disable');
+            });
+            attackBtn.addEventListener('click', () => {
+                attackModal.classList.add("display");
+                formContainer.classList.add('disable');
+            });
+            weaponX.addEventListener('click', () => {
+                weaponModal.classList.remove("display");
+                formContainer.classList.remove('disable');
+            });
+            attackX.addEventListener('click', () => {
+                attackModal.classList.remove("display");
+                formContainer.classList.remove('disable');
+            });
+
+            var category = document.getElementById('weapons_type');
+            var blade__l = document.getElementById('blade_l');
+            var steel = document.getElementById('steel');
+            var handle =document.getElementById('handle');
+            var placeorg= document.getElementById('place_g');
+            var typo = document.getElementById('typo');
+            var calibr = document.getElementById('calibre_g');
+            var cartrid = document.getElementById('cartridge_g');
+            var barr = document.getElementById('barrel_g');
+            var rangee =document.getElementById('effect_g');
+            var feed= document.getElementById('feed_g');
+            var mater = document.getElementById('mat_g');
+            var warh = document.getElementById('warhead_at');
+            var diam = document.getElementById('diam_at');
+            var engines = document.getElementById('engine_at');
+            var fillIt = document.getElementById('filling_ex');
+            var detonation = document.getElementById('det');
+
+
+
+            category.onchange = function(){
+
+                var  enableBladeL = false, enableSteel=false, enableHandle=false,
+                enablePlace = false, enableType = false, enableCalibre=false, enableCartridge=false,
+                enableBarrel = false, enableRange = false, enableFeeding=false, enableMaterial=false,
+                enableWarhead = false, enableDiameter = false, enableEngine=false, enableFilling=false, enableDetonation = false;
+                switch(category.options.selectedIndex){
+                    case 0:
+                        break;
+                    case 1:
+                        enableBladeL = true;
+                        enableSteel = true; 
+                        enableHandle = true;
+                        enableType = true;
+                        
+                        break;
+                    case 2:
+                        enablePlace = true;
+                        enableType = true;
+                        enableCalibre=true; 
+                        enableCartridge=true;
+                        enableBarrel = true;
+                        enableRange = true;
+                        enableFeeding=true;
+                        enableMaterial=true;
+                        break;
+                    case 3:
+                        enableBladeL = false;
+                        enableSteel=false; 
+                        enableHandle=false;
+                        enablePlace = true;
+                        enableType = true;
+                        enableCalibre=true; 
+                        enableCartridge=true;
+                        enableBarrel = true;
+                        enableRange = true;
+                        enableFeeding=true;
+                        enableMaterial=true;
+                        break;
+                    case 4:
+                        enableBladeL = false;
+                        enableSteel=false; 
+                        enableHandle=false;
+                        enablePlace = true;
+                        enableType = true;
+                        enableCalibre=true; 
+                        enableCartridge=true;
+                        enableBarrel = true;
+                        enableRange = true;
+                        enableFeeding=true;
+                        enableMaterial=true;
+                        break;
+                    case 5:
+                        enableBladeL = false;
+                        enableSteel=false; 
+                        enableHandle=false;
+                        enablePlace = true;
+                        enableType = true;
+                        enableCalibre=true; 
+                        enableCartridge=true;
+                        enableBarrel = true;
+                        enableRange = true;
+                        enableFeeding=true;
+                        enableMaterial=true;
+                        break;
+                    case 6:
+                        enablePlace = true;
+                        enableType = true;
+                        enableMaterial=true;
+                        enableDiameter = true; 
+                        enableEngine=true;
+                        enableFilling=true;
+                        enableDetonation = true;
+                        enableRange=true;
+                        enableFeeding=true;
+                        enableWarhead=true;
+
+                        break;
+                    case 7:
+                        enablePlace = true;
+                        enableType = true;
+                        enableCalibre=true;
+                        enableBarrel = true;
+                        enableRange = true;
+                        enableFeeding=true;
+                        enableMaterial=true;
+                        enableWarhead = true;
+                        enableDiameter = true; 
+                        enableEngine=true;
+                        break;
+                    default:
+                        break;
+
+                }
+
+                blade__l.disabled = !enableBladeL;
+                steel.disabled = !enableSteel;
+                handle.disabled = !enableHandle;
+                placeorg.disabled= !enablePlace;
+                typo.disabled = !enableType;
+                calibr.disabled = !enableCalibre;
+                cartrid.disabled = !enableCartridge;
+                barr.disabled = !enableBarrel;
+                rangee.disabled = !enableRange;
+                feed.disabled = !enableFeeding;
+                mater.disabled = !enableMaterial;
+                warh.disabled = !enableWarhead;
+                diam.disabled = !enableDiameter;
+                engines.disabled = !enableEngine;
+                fillIt.disabled = !enableFilling;
+                detonation.disabled = !enableDetonation;
+
+
+            }
+
+        </script>
+    </body>
+</html>

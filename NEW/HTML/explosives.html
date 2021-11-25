@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Terrorism | Explosives </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="explosives.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://www.iconsdb.com/icons/preview/white/gun-5-xxl.png" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script type="text/javascript" src="menu.js"></script>
+        <script type="text/javascript" src="filters.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Montserrat:300,400,600"
+          rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav" onclick="onClickBoth()">
+                <li><a href="home.html"><i class="fa fa-fw fa-home">Home</i></a></li>
+                <li><a href="weapons.html"><i class="fa fa-fw fa-bomb">Weapons</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-bar-chart-o">Statistics</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-exclamation-circle">Worst Attacks</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-user">User</i></a></li>
+                <li><a href="admin.html"><i class="fa fa-fw fa-user-secret">Admin</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-line-chart">About</i></a></li>
+                <li><a href=""><i class="fa fa-gw fa-heart"> Team</i></a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search..">
+            <a class="search-btn" href="">
+                <i class="fa fa-fw fa-search"></i>
+            </a>
+        </div>
+        <div class="filtre">
+            <form class="form">
+                <label for="arsenal">Type:</label><br>
+                <select id="weapons_type" onchange="changeOptions(this)">
+                    <option value="f0"></option>
+                    <option value="f1" >Meele Weapons</option>
+                    <option value="f2">Pistols</option>
+                    <option value="f2">Shotguns</option>
+                    <option value="f2" >Rifles</option>
+                    <option value="f2">Machine Guns</option>
+                    <option value="f4">Explosives</option>
+                    <option value="f3">Anti-tank Weapons</option>
+                </select>
+        </div>
+            <div class="infos">
+                <h1>Eplosives &</h1>
+                <h4>Anti-Tank Weapons</h4>
+            </div>
+            <div class="content1">
+                <img class="front" src="explosives/ironrain_9k11_fagot.jpg" alt="">
+                <a href="">9K111 FAGOT </a>
+            </div>
+            <div class="content2">
+                <img class="front" src="explosives/ironrain_9k115-2-metism.jpg" alt="">
+                <a href="">9K115-2 METIS-M </a>
+            </div>
+            <div class="content3">
+                <img class="front" src="explosives/ironrain_9k32-strela2.jpg" alt="">
+                <a href="">9K32 STRELA-2 </a>
+            </div>
+            <div class="content4">
+                <img class="front" src="explosives/ironrain_9k39-igla.jpg" alt="">
+                <a href="">PK38 IGLA </a>
+            </div>
+            <div class="content5">
+                <img class="front" src="explosives/ironrain_ags-17.jpg" alt="">
+                <a href="">AGS-17 </a>
+            </div>
+            <div class="content6">
+                <img class="front" src="explosives/ironrain_bgm-71.jpg" alt="">
+                <a href="">BGM-71 TOW </a>
+            </div>
+            <div class="content7">
+                <img class="front" src="explosives/ironrain-f1-grenade.jpg" alt="">
+                <a href="">F1 </a>
+            </div>
+            <div class="content8">
+                <img class="front" src="explosives/ironrain_fim.jpg" alt="">
+                <a href="">FIM-92 STINGER </a>
+            </div>
+            <div class="content9">
+                <img class="front" src="explosives/ironrain_fn6.jpg" alt="">
+                <a href="">FN-6 </a>
+            </div>
+            <div class="content10">
+                <img class="front" src="explosives/ironrain_hj8.jpg" alt="">
+                <a href="">HJ-8 </a>
+            </div>
+            <div class="content11">
+                <img class="front" src="explosives/ironrain_m79-osa.jpg" alt="">
+                <a href="">M79 OSA </a>
+            </div>
+            <div class="content12">
+                <img class="front" src="explosives/ironrain_milan.jpg" alt="">
+                <a href="">MILAN </a>
+            </div>
+            <div class="content13">
+                <img class="front" src="explosives/ironrain_milkor.jpg" alt="">
+                <a href="">MIKOR MGL </a>
+            </div>
+            <div class="content14">
+                <img class="front" src="explosives/ironrain_hwasong.jpg" alt="">
+                <a href="">HWASONG 15 </a>
+            </div>
+            <div class="content15">
+                <img class="front" src="explosives/ironrain_pkornet.jpg" alt="">
+                <a href=""> PK133 KORNET </a>
+            </div>
+            <div class="content16">
+                <img class="front" src="explosives/ironrain_rgd5.jpg" alt="">
+                <a href="">RGD-5 </a>
+            </div>
+            <div class="content17">
+                <img class="front" src="explosives/ironrain_rpg22.jpg" alt="">
+                <a href="">RPG-22 </a>
+            </div>
+            <div class="content18">
+                <img class="front" src="explosives/ironrain_rpg29.jpg" alt="">
+                <a href="">RPG-29 ”VAMPIR”  </a>
+            </div>
+            <div class="content19">
+                <img class="front" src="explosives/ironrain_rpg43.jpg" alt="">
+                <a href="">RPG-43 </a>
+            </div>
+            <div class="content20">
+                <img class="front" src="explosives/ironrain_rpg7.jpg" alt="">
+                <a href="">RPG-7 </a>
+            </div>
+            <div class="content21">
+                <img class="front" src="explosives/ironrain_spg9.jpg" alt="">
+                <a href="">PSL/FPQ Romak-3 </a>
+            </div>
+            
+        
+        <audio id="song">
+            <source src="music/LORN-ANVIL.mp3" type="audio/mpeg">
+        </audio>
+            
+    </body>
+</html>

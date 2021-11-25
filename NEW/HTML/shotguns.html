@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Terrorism | Shotguns </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="shotguns.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://www.iconsdb.com/icons/preview/white/gun-5-xxl.png" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script type="text/javascript" src="menu.js"></script>
+        <script type="text/javascript" src="filters.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Montserrat:300,400,600"
+          rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav" onclick="onClickBoth()">
+                <li><a href="home.html"><i class="fa fa-fw fa-home">Home</i></a></li>
+                <li><a href="weapons.html"><i class="fa fa-fw fa-bomb">Weapons</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-bar-chart-o">Statistics</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-exclamation-circle">Worst Attacks</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-user">User</i></a></li>
+                <li><a href="admin.html"><i class="fa fa-fw fa-user-secret">Admin</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-line-chart">About</i></a></li>
+                <li><a href=""><i class="fa fa-gw fa-heart"> Team</i></a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search..">
+            <a class="search-btn" href="">
+                <i class="fa fa-fw fa-search"></i>
+            </a>
+        </div>
+            <div class="filters">
+                <button type="button" class="filter" id="filter" onclick="openSlide()">Filters</button>
+                <div class="side-slide" id="side-slide"> 
+                   <div id="filter-button">
+                      <button class="exit" id="exit" onclick="exitSlide()">&times;</button>
+                    <div>
+                        <button class="all" id="all">All</button><br>
+                        <button class="origin" id="origin" >Country of Origin</button><br>
+                        <div class="org" id="org">
+                            <button type="button" class="org-btn btn1">Italy</button>
+                        </div>
+                        <button class="typo" id="typo" >Type</button><br>
+                        <div class="types" id="types">
+                            <button type="button" class="type-btn btn1">Combat Shotgun</button>
+                            <button type="button" class="type-btn btn2">Shotgun</button>
+                        </div>
+                        <button class="brand" id="brand" >Brand</button><br>
+                        <div class="brands" id="brands">
+                            <button type="button" class="btn1">Benneli</button>
+                            <button type="button" class="btn2">Franchi</button>
+                        </div>
+                        <button class="length-btn" > Barrel Length</button><br>
+                        <div class="length" id="length">
+                            <div class="min-length">
+                                <input type="text" placeholder="Min Value"/>
+                            </div>
+                            <div class="max-length">
+                                <input type="text" placeholder="Max Value"/>
+                            </div>
+                        </div>
+                        <button class="cartridge" id="cartridge" >Cartridge</button>
+                        <div class="cartridge-btn" id="cartridge-btn">
+                            <button type="button" class="cartridge-btn1">12 gauge sheels/slugs</button>
+                            <button type="button" class="cartridge-btn2">12 gauge - 70 mm sheels</button>
+                            <button type="button" class="cartridge-btn3">20 gauge sheels/slugs</button>
+                        </div>
+                        <button class="feed" id="feed">Feeding System</button>
+                        <div class="feed-btn" id="feed-btn">
+                            <button type="button" class="feed1">5+1 Round </button>
+                            <button type="button" class="feed2">6+1 Round</button>
+                            <button type="button" class="feed3">7+1 Round</button>
+                            <button type="button" class="feed4">8+1 Round</button>
+                            <button type="button" class="feed5">Internal Tube Magazine</button>
+                        </div>
+                        <button class="range_ef" id="range_ef">Effective Range</button>
+                        <div class="range-btn" id="range-btn">
+                            <button type="button" class="range1">150 m</button>
+                            <button type="button" class="range2">Depends on ammunition</button>
+                        </div>
+                        <button class="mat" id="mat">Material</button>
+                        <div class="feed-btn" id="feed-btn">
+                            <button type="button" class="mat1">Steel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="infos">
+                <h1>Shotguns</h1>
+            </div>
+            <div class="content1">
+                <img class="front" src="shotguns/ironrain_benneli.jpg" alt="">
+                <a href="">BENELLI M3</a>
+            </div>
+            <div class="content2">
+                <img class="front" src="shotguns/ironrain_franchi.jpg" alt="">
+                <a href="">FRANCHI SPAS-12</a>
+            </div>
+            
+        
+        <audio id="song">
+            <source src="music/LORN-ANVIL.mp3" type="audio/mpeg">
+        </audio>
+            
+    </body>
+</html>

@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+ .tnav{
+    background-color: #000000df;
+    width: 100%;
+    overflow: hidden;
+ }
+ 
+ .tnav a{
+    float: right;
+    display: block;
+    color: #FFFF;
+    text-align: center;
+    font-family: 'Nova Flat';
+    padding: 1% 1% 1% 1%;
+    border-right: 1px solid #FFFF;
+    text-decoration: none;
+    width:8.5%;
+    font-size: 80%;
+ }
+ .active{
+    background-color: #420400;
+ }
+ .weap,.stat, .srch{
+    float: right;
+    overflow: hidden;
+    border-color: rgba(0, 0,0,0);
+    border-width: inherit;
+    border-right: 1px solid #FFFF;
+ }
+
+ .weap .weapbtn, .stat .statbtn, .srch .srchbtn{
+    border-color: rgba(155, 111, 111, 0);
+    padding:1% 1% 1% 1%;
+    width:8.5%;
+    font-size: 80%;
+    font-family: 'Nova Flat';
+    text-align: center;
+    background-color: inherit;
+    color: #FFFF;
+ }
+
+ .weap-content, .stat-content, .srch-content{
+    display: none;
+    position: absolute;
+    background-color: #000000df;
+    border-bottom: 1px solid #FFFF;
+ }
+ 
+ .weap-content a, .stat-content a{
+    float:none;
+    text-decoration: none;
+    width: inherit;
+    color: #FFFF;
+    padding: 1% 1% 1% 1%;
+    display: block;
+    text-align: center;
+ 
+ }
+ .tnav a:hover, .weap:hover, .stat:hover, .srch:hover{
+    background-color: #420400;
+    color: #FFFF;
+  }
+
+  .weapbtn:hover, .stat .statbtn:hover , .srch .srchbtn:hover{
+   background-color: #420400;
+   color: #FFFF;
+  }
+ 
+  .weap-content a:hover, .stat-content a:hover{
+    background-color: #420400;
+    color: #FFFF;
+  }
+  
+  .weap:hover .weap-content, .stat:hover .stat-content, .srch:hover .srch-content {
+    display: block;
+  }
+ 
+  
+  .srch-content input[type=text] {
+    padding: 1% 1% 1% 1%;
+    margin-top: 0;
+    width: 95%;
+    border: none;
+  }
+
+  .srch-content button {
+    background: #420400;
+    border: none;
+    cursor: pointer;
+    color: #FFFF;
+    align-self: center;
+    padding: 1% 1% 1% 1%;
+    width: 100%;
+  }
+  
+  #logo{
+   display: none;
+  }
+ 
+.title{
+    margin:20% 0 10% 0;
+    background-color: #000000df;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    text-align: left;
+    padding-left: 5%;
+    border-top:5px solid #420400;
+    border-bottom:5px solid #420400;
+}
+
+.info {
+    margin: 20% 0 10% 0;
+    background-color: #000000df;
+}
+
+p{
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    padding: 10% 10% 0 10%;
+    text-align: center;
+}
+
+.display{
+    cursor:pointer;
+    border: hidden;
+    border-radius: 25px;
+    margin: 5% 0 10% 10%;
+    padding: 5% 5% 5% 5%;
+    background-color:#420400;
+    color: white;
+}
+
+img{
+    width: 90%;
+    height: 90%;
+    margin-left:5%;
+}
+
+.save{
+    cursor:pointer;
+    border: hidden;
+    border-radius: 5px;
+    margin: 5% 0 10% 10%;
+    padding: 5% 5% 5% 5%;
+    background-color:#420400;
+    color: white;
+}
+
+.display:hover, .save:hover{
+    background-color:#310603;
+}
+
+.display:active, .save:active{
+    background-color:#310603;
+}
+
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1529078155058-5d716f45d604?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1349&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color:#000;
+    margin: 0;
+}
+
+@media only screen and (min-width: 992px){
+   .title{
+      font-size: 200%;
+   }
+
+   p{
+      font-size: 200%;
+   }
+
+   .display{
+      margin: 5% 0 10% 10%;
+      padding: 3% 7% 3% 7%;
+      font-size: 200%;
+   }
+
+   .save{
+      margin: 5% 0 10% 10%;
+      padding: 3% 7% 3% 7%;
+      font-size: 200%;
+   }
+
+   #logo{
+   display: unset;
+   position:absolute;
+   margin-left: -1%;
+   margin-top: 0.25%; 
+   width:5%;
+   height: 5%;
+   }
+
+   .tnav a{
+      font-size: 100%;
+   }
+
+   .weap .weapbtn, .stat .statbtn, .srch .srchbtn{
+      font-size: 100%;
+   }
+
+   .weap, .stat, .srch{
+      width: 10%;
+   }
+
+   .weap-content, .stat-content{
+      width: 10%;
+   }
+
+   .weap-content a, .stat-content a{
+      width: 98%;
+   }
+
+
+}
+

@@ -1,0 +1,756 @@
+*{
+   margin: 0%;
+   padding: 0;
+}
+body{
+  background-image:url('photos/red.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.tnav{
+  background-color: rgba(0, 0,0,0.3);
+  overflow:hidden;
+}
+
+.tnav a{
+  float: right;
+  display: block;
+  color: #FFFF;
+  text-align: center;
+  font-family: 'Nova Flat';
+  font-size: 130%;
+  padding: 15px 20px;
+  border-right: 1px solid #FFFF;
+  text-decoration: none;
+}
+.active{
+  background-color: #420400;
+}
+.weap,.stat, .srch{
+  float: right;
+  overflow: hidden;
+}
+.weap .weapbtn, .stat .statbtn, .srch .srchbtn{
+  font-size: 125%;
+  border-color: rgba(0, 0,0,0);
+  padding:15px 20px;
+  background-color: inherit;
+  color: #FFFF;
+  border-right: 1px solid #FFFF;
+}
+.weap-content, .stat-content, .srch-content{
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0,0,0.3);
+  width: inherit;
+}
+
+.weap-content a, .stat-content a{
+  float:none;
+  text-decoration: none;
+  color: #FFFF;
+  padding: 10px 15px;
+  display: block;
+  text-align: center;
+  font-size: 125%;
+  border-bottom: 1px solid #FFFF;
+
+}
+.tnav a:hover, .weap:hover .weapbtn, .stat:hover .statbtn , .srch:hover .srchbtn{
+  background-color: #420400;
+  color: #FFFF;
+}
+
+.weap-content a:hover, .stat-content a:hover{
+  background-color: #420400;
+  color: #FFFF;
+}
+
+.weap:hover .weap-content, .stat:hover .stat-content, .srch:hover .srch-content {
+  display: block;
+}
+
+
+.srch-content input[type=text] {
+  padding: 15px 6px;
+  margin-top: 0%;
+  font-size: 65%;
+  border: none;
+}
+.srch-content button {
+  width: 100%;
+  background: #420400;
+  font-size:100%;
+  border: none;
+  cursor: pointer;
+  color: #FFFF;
+  align-self: center;
+  padding: 15px 15px;
+}
+
+#logo{
+   position:absolute;
+   margin-left: -1%;
+   margin-top: 0.25%; 
+   width:5%
+}
+#press{
+  width:3.5%; 
+  float: right;
+  margin-top: 2.5%;
+  margin-right: 2%;
+}
+.box {
+  margin-left: 0%;
+  margin-top:7%;
+ text-align: center;
+ color:#FFFF;
+ font-size: 300%;
+ font-family:'Nova Flat';
+}
+h1{
+  font-size: 200%;
+  color: #fff;
+  font-family: 'Nova Flat';
+  margin-top: 2%;
+  margin-bottom: 2.5%;
+}
+h2, h3{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 150%;
+  color:#FFFF;
+  font-family: 'Nova Flat';
+}
+p{
+  font-size:125%;
+  color: #FFFF;
+  font-family: 'Times New Roman';
+}
+.box1 li, .box2 li{
+  margin-left: 40%;
+  font-size:125%;
+  color: #FFFF;
+  font-family: 'Times New Roman';
+  text-align: justify;
+}
+.box3 li{
+  margin-left: 30%;
+  font-size:125%;
+  color: #FFFF;
+  font-family: 'Times New Roman';
+  text-align: justify;
+}
+.box4 li, .box9 li {
+  margin-left: 15%;
+  font-size:125%;
+  color: #FFFF;
+  font-family: 'Times New Roman';
+  text-align: left;
+}
+.box7 li, .box8 li, .box5 li{
+  margin-left: 20%;
+  font-size:125%;
+  color: #FFFF;
+  font-family: 'Times New Roman';
+  text-align: left;
+}
+.box1{
+  background-color: rgba(0, 0,0,0.4);
+  margin-top: 8.5%;
+  margin-left: 10%;
+  width: 40%;
+  height: 34%;
+  position:absolute;
+  text-align: center;
+  border-style:groove;
+  border-color: #420400;
+
+}
+
+.img1{
+  background-color: rgba(0, 0,0,0.6);
+  margin-top: 8.5%;
+  margin-left: 51%;
+  width: 40%;
+  height: 52.3%;
+  position:absolute;
+  border-style:groove;
+  border-color: #420400;
+}
+.img1 img{
+  width:40%;
+}
+.box2{
+  background-color: rgba(0, 0,0,0.6);
+  margin-top: 27%;
+  margin-left: 10%;
+  width: 40%;
+  height: 35%;
+  position:absolute;
+  text-align: center;
+  border-style:groove;
+  border-color: #420400;
+}
+.box3{
+  background-color: rgba(0, 0,0,0.6);
+  margin-top: 36%;
+  margin-left: 51%;
+  width: 40%;
+  height: 55.5%;
+  position:absolute;
+  text-align: center;
+  border-style:groove;
+  border-color: #420400;
+}
+.img2{
+ 
+  margin-top: 46%;
+  margin-left: 10%;
+  width: 40%;
+  height: 57.4%;
+  position:absolute;
+  border-style:groove;
+  border-color: #420400;
+  background-color: rgba(0, 0,0,0.6);
+ 
+}
+.img2 img{
+  width:40%;
+}
+.box4{
+  background-color: rgba(0, 0,0,0.6);
+  margin-top: 65.5%;
+  margin-left: 51%;
+  width: 40%;
+  height: 33.5%;
+  position:absolute;
+  text-align: center;
+  border-style:groove;
+  border-color: #420400;
+}
+.box5{
+  background-color: rgba(0, 0,0,0.6);
+  margin-top: 76.5%;
+  margin-left: 10%;
+  width: 40%;
+  height: 30.5%;
+  position:absolute;
+  text-align: center;
+  border-style:groove;
+  border-color: #420400;
+}
+.img3{
+  background-color: rgba(0, 0,0,0.6);
+  width: 40%;
+  height: 52.5%;
+  margin-top: 84%;
+  margin-left: 51%;
+  position:absolute;
+  border-style:groove;
+  border-color: #420400;
+}
+.img3 img{
+  width:40%;
+}
+.box6{
+  background-color: rgba(0, 0,0,0.6);
+  margin-top: 93%;
+  margin-left: 10%;
+  width: 40%;
+  height: 17%;
+  position:absolute;
+  text-align: center;
+  border-style:groove;
+  border-color: #420400;
+}
+.img4{
+ 
+  margin-top: 103%;
+  margin-left: 10%;
+  width: 40%;
+  background-color: rgba(0, 0,0,0.6);
+  height: 70%;
+  position:absolute;
+  border-style:groove;
+  border-color: #420400;
+
+}
+.img4 img{
+  width: 40%;
+}
+.box7{ 
+  background-color: rgba(0, 0,0,0.6);
+  margin-top: 112%;
+  margin-left: 51%;
+  width: 40%;
+  height: 30%;
+  position:absolute;
+  text-align: center;
+  border-style:groove;
+  border-color: #420400;
+}
+.img5{
+  margin-top: 128.75%;
+  margin-left: 51%;
+  width:40%;
+  background-color: rgba(0, 0,0,0.6);
+  height: 44.5%;
+  position:absolute;
+  border-style:groove;
+  border-color: #420400;
+}
+.img5 img{
+  width: 40%;
+}
+.box8{
+  background-color: rgba(0, 0,0,0.6);
+  margin-top: 140%;
+  margin-left: 10%;
+  width: 40%;
+  height: 40%;
+  position:absolute;
+  text-align: center;
+  border-style:groove;
+  border-color: #420400;
+}
+
+.box9{
+  background-color: rgba(0, 0,0,0.6);
+  margin-top: 161.75%;
+  margin-left: 10%;
+  width: 40%;
+  height: 24%;
+  position:absolute;
+  text-align: center;
+  border-style:groove;
+  border-color: #420400;
+}
+
+.img6{
+  
+  width: 40%;
+  margin-top: 153%;
+  margin-left: 51%;
+  background-color: rgba(0, 0,0,0.6);
+  height: 41.5%;
+  position:absolute;
+  border-style:groove;
+  border-color: #420400;
+} 
+.img6 img{
+  width:40%;
+}
+.img1 img,.img2 img, .img3 img, .img4 img, .img5 img, .img6 img{
+  width:100%;
+}
+
+
+@media only screen and (max-width:1440px){
+  #logo{
+     width: 5%;
+     margin-top: 0%;
+   }
+  #press{
+     width: 2.5%;
+  }
+   .srch .srch.srchbtn,.stat .statbtn, .weap .weapbtn{
+     font-size: 125%;
+     padding:15px 18px;
+  }
+  
+  .box{
+     margin-top: 13%;
+     font-size: 200%;
+     text-align: center;
+  }
+  
+  h1{
+     font-size: 140%;
+  }
+  h2,h3{
+     font-size: 100%;
+  }
+  p, .box1 li, .box2 li, .box3 li, .box4 li, .box5 li, .box6 li, .box7 li, .box8 li, .box9 li {
+     font-size: 100%;
+     align-items: center;
+  }
+
+  .box1{
+     height: 27%;
+  }
+  .img1{
+     height:42.5%;
+  }
+  .box2{
+     margin-top: 26.7%;
+     height:30%;
+  }
+  
+  .box3{
+     margin-top:36%;
+     height: 40%;
+  }
+
+  .img2{
+     margin-top: 46.5%;
+     height: 46.75%;
+  }
+  .box4{
+     margin-top: 62%;
+     height: 45%;
+  }
+
+  .box5{
+     margin-top: 77%;
+     height: 25%;
+  }
+
+  .img3{
+     margin-top: 91.5%;
+     height: 42.5%;
+  }
+  .box6{
+     margin-top: 94%;
+     height: 20%;
+  }
+  .img4{
+     margin-top: 108%;
+     height: 57%;
+  }
+  .box7{
+     margin-top: 119.5%;
+     height: 25%;
+  }
+  .box8{
+     margin-top: 145%;
+     height: 37%;
+     margin-left: 10%;
+  }
+  .img5{
+     margin-top: 136.5%;
+     height: 36%;
+  }
+  .box9{
+     margin-top: 169%;
+     height: 19%;
+     
+  }
+  .img6{
+     margin-top:160%;
+     height: 33.5%;
+     
+  }
+}
+@media only screen and (max-width:768px) {
+  .tnav{
+     width: 100%;
+  }
+  .tnav a{
+     padding: 20px 5px;
+     font-size: 100%;
+  }
+  .weap,.srch,.stat{
+     border-color: rgba(0, 0,0,0);
+  }
+  .weap .weapbtn, .stat .statbtn,.srch.srchbtn{
+     font-size: 100%;
+     padding: 15px 18px;
+  }
+  #logo{
+     margin-top: 0%;
+     width: 7.5%;
+  }
+  #press{
+     width: 5%;
+  }
+  .box{
+     margin-top: 13%;
+     font-size: 200%;
+     text-align: center;
+  }
+  
+  h1{
+     font-size: 140%;
+  }
+  h2,h3{
+     font-size: 100%;
+  }
+  p, .box1 li, .box2 li, .box3 li, .box4 li, .box5 li, .box6 li, .box7 li, .box8 li, .box9 li {
+     font-size: 100%;
+     align-items: center;
+  }
+
+  .box1{
+     height: 22%;
+  }
+  .img1{
+     height:20%;
+  }
+  .box2{
+     margin-top: 40%;
+     height:22%;
+  }
+  
+  .box3{
+     margin-top:37%;
+     height: 33%;
+  }
+
+  .img2{
+     margin-top: 71%;
+     height: 22%;
+  }
+  .box4{
+     margin-top: 83%;
+     height: 25%;
+  }
+
+  .box5{
+     margin-top: 102%;
+     height: 20%;
+  }
+
+  .img3{
+     margin-top: 118%;
+     height: 20%;
+  }
+  .box6{
+     margin-top: 130.5%;
+     height: 15%;
+  }
+  .img4{
+     margin-top: 152%;
+     height: 26.75%;
+  }
+  .box7{
+     margin-top: 147%;
+     height: 25%;
+  }
+  .box8{
+     margin-top: 190%;
+     height: 39%;
+     margin-left: 10%;
+  }
+  .img5{
+     margin-top: 182%;
+     height: 17%;
+  }
+  .box9{
+     margin-top: 206%;
+     height: 10%;
+     margin-left: 51%;
+  }
+  .img6{
+     margin-top:221%;
+     height: 16%;
+     
+  }
+}
+@media only screen and (max-width:414px) {
+  .tnav a {
+     font-size: 70%;
+      padding:3px 2.75px;
+     padding-top: 2px;
+   }
+   .srch .srchbtn,.stat .statbtn, .weap .weapbtn{
+      font-size: 65%;
+      padding:1.5px 2.5px;
+   }
+  #logo{
+     width: 7.5%;
+  }
+  #press{
+     width: 5%;
+  }
+  
+  .box{
+     margin-top: 13%;
+     font-size: 200%;
+     text-align: center;
+  }
+  
+  h1{
+     font-size: 140%;
+  }
+  h2,h3{
+     font-size: 90%;
+  }
+  p, .box1 li, .box2 li, .box3 li, .box4 li, .box5 li, .box6 li, .box7 li, .box8 li, .box9 li {
+     font-size: 100%;
+  }
+
+  .box1{
+     height: 33%;
+  }
+  .img1{
+     height:15%;
+  }
+  .box2{
+     margin-top: 70%;
+     height:33%;
+  }
+  
+  .box3{
+     margin-top:38%;
+     height: 60%;
+  }
+  .box3 li{
+     margin-left: 17%;
+  }
+
+  .img2{
+     margin-top: 132%;
+     height: 16.5%;
+  }
+  .box4{
+     margin-top: 147%;
+     height: 45%;
+  }
+
+  .box5{
+     margin-top: 164%;
+     height: 34%;
+  }
+
+  .img3{
+     margin-top: 229.5%;
+     height: 15%;
+  }
+  .box6{
+     margin-top: 227%;
+     height: 25%;
+  }
+  .img4{
+     margin-top: 274%;
+     height: 20%;
+  }
+  .box7{
+     margin-top: 259%;
+     height: 35%;
+  }
+  .box8{
+     margin-top: 312%;
+     height: 54%;
+     margin-left: 10%;
+  }
+  .img5{
+     margin-top: 324%;
+     height: 12.5%;
+  }
+  .box9{
+     margin-top: 349%;
+     height: 20%;
+     margin-left: 51%;
+  }
+  .img6{
+     margin-top:387%;
+     height: 12.5%;
+     
+  }
+}
+
+
+@media only screen and (max-width:360px) {
+  .tnav a {
+     font-size: 62.5%;
+     padding:2px 1px;
+     padding-top: 2px;
+   }
+   .srch .srchbtn,.stat .statbtn, .weap .weapbtn{
+      font-size: 60%;
+      padding:1.5px 1px;
+   }
+  #logo{
+     width: 15%;
+  }
+  #press{
+     width: 10%;
+  }
+  .box{
+     margin-top: 13%;
+     font-size: 200%;
+     text-align: center;
+  }
+  
+  h1{
+     font-size: 120%;
+  }
+  h2,h3{
+     font-size: 90%;
+  }
+  p, .box1 li, .box2 li, .box3 li, .box4 li, .box5 li, .box6 li, .box7 li, .box8 li, .box9 li {
+     font-size: 90%;
+  }
+
+  .box1{
+     height: 33%;
+  }
+  .img1{
+     height:12.5%;
+  }
+  .box2{
+     margin-top: 79%;
+     height:33%;
+  }
+  
+  .box3{
+     margin-top:37%;
+     height: 58%;
+  }
+  .box3 li{
+     margin-left: 17%;
+  }
+
+  .img2{
+     margin-top: 149.5%;
+     height: 14.5%;
+  }
+  .box4{
+     margin-top: 159%;
+     height: 41%;
+  }
+
+  .box5{
+     margin-top: 182.5%;
+     height: 30.5%;
+  }
+
+  .img3{
+     margin-top: 246.5%;
+     height: 13%;
+  }
+  .box6{
+     margin-top: 248%;
+     height: 23%;
+  }
+  .img4{
+     margin-top: 298%;
+     height: 17%;
+  }
+  .box7{
+     margin-top: 276%;
+     height: 35%;
+  }
+  .box8{
+     margin-top: 336%;
+     height: 50.5%;
+     margin-left: 10%;
+  }
+  .img5{
+     margin-top: 351%;
+     height: 11%;
+  }
+  .box9{
+     margin-top: 377%;
+     height: 18.5%;
+     margin-left: 51%;
+  }
+  .img6{
+     margin-top:419%;
+     height: 10%;
+     
+  }
+}

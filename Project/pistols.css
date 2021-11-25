@@ -1,0 +1,494 @@
+*{
+  margin: 0%;
+  padding: 0;
+}
+body{
+  background-image:url('photos/red.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.tnav{
+  background-color: rgba(0, 0,0,0.3);
+  overflow: hidden;
+}
+
+.tnav a{
+  float: right;
+  display: block;
+  color: #FFFF;
+  text-align: center;
+  font-family: 'Nova Flat';
+  font-size: 130%;
+  padding: 15px 20px;
+  border-right: 1px solid #FFFF;
+  text-decoration: none;
+}
+.active{
+  background-color: #420400;
+}
+.weap,.stat, .srch{
+  float: right;
+  overflow: hidden;
+}
+.weap .weapbtn, .stat .statbtn, .srch .srchbtn{
+  font-size: 125%;
+  border-color: rgba(0, 0,0,0);
+  padding:15px 20px;
+  background-color: inherit;
+  color: #FFFF;
+  border-right: 1px solid #FFFF;
+}
+.weap-content, .stat-content, .srch-content{
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0,0,0.3);
+  width: inherit;
+}
+
+.weap-content a, .stat-content a{
+  float:none;
+  text-decoration: none;
+  color: #FFFF;
+  padding: 10px 15px;
+  display: block;
+  text-align: center;
+  font-size: 125%;
+  border-bottom: 1px solid #FFFF;
+
+}
+.tnav a:hover, .weap:hover .weapbtn, .stat:hover .statbtn , .srch:hover .srchbtn{
+  background-color: #420400;
+  color: #FFFF;
+}
+
+.weap-content a:hover, .stat-content a:hover{
+  background-color: #420400;
+  color: #FFFF;
+}
+
+.weap:hover .weap-content, .stat:hover .stat-content, .srch:hover .srch-content {
+  display: block;
+}
+
+
+.srch-content input[type=text] {
+  padding: 15px 6px;
+  margin-top: 0%;
+  font-size: 65%;
+  border: none;
+}
+.srch-content button {
+  width: 100%;
+  background: #420400;
+  font-size:100%;
+  border: none;
+  cursor: pointer;
+  color: #FFFF;
+  align-self: center;
+  padding: 15px 15px;
+}
+
+#logo{
+   position:absolute;
+   margin-left: -1%;
+   margin-top: 0.25%; 
+   width:5%
+}
+#press{
+width:4%; 
+float: right;
+margin-top: 2.5%;
+margin-right: 2%;
+}
+.descr p{
+margin-left: 45%;
+ margin-top: 5%;
+ font-size: 300%;
+ color:#FFFF;
+ font-family: 'Nova Flat';
+ position:absolute;
+}
+.content1{
+background-color: rgba(0, 0,0,0.4);
+margin-top: 11%;
+margin-left: 17.5%;
+width: 15%;
+height: 43%;
+position:absolute;
+text-align: center;
+border-style:groove;
+border-color: #420400;
+}
+
+.content2{
+background-color: rgba(0, 0,0,0.4);
+margin-top: 11%;
+margin-left: 42.5%;
+width: 15%;
+height: 43%;
+position:absolute;
+text-align: center;
+border-style:groove;
+border-color: #420400;
+}
+.content3{
+background-color: rgba(0, 0,0,0.4);
+margin-top: 11%;
+margin-left: 67.5%;
+width: 15%;
+height: 43%;
+position:absolute;
+text-align: center;
+border-style:groove;
+border-color: #420400;
+}
+.content4{
+background-color: rgba(0, 0,0,0.4);
+margin-top: 36%;
+margin-left: 5%;
+width: 15%;
+height: 43%;
+position:absolute;
+text-align: center;
+border-style:groove;
+border-color: #420400;
+}
+.content5{
+background-color: rgba(0, 0,0,0.4);
+margin-top: 36%;
+margin-left: 30%;
+width: 15%;
+height: 43%;
+position:absolute;
+text-align: center;
+border-style:groove;
+border-color: #420400;
+}
+.content6{
+background-color: rgba(0, 0,0,0.4);
+margin-top: 36%;
+margin-left: 55%;
+width: 15%;
+height: 43%;
+position:absolute;
+text-align: center;
+border-style:groove;
+border-color: #420400;
+}
+.content7{
+background-color: rgba(0, 0,0,0.4);
+margin-top: 36%;
+margin-left: 80%;
+width: 15%;
+height: 43%;
+position:absolute;
+text-align: center;
+border-style:groove;
+border-color: #420400;
+}
+.content1 a, .content2 a, .content3 a, .content4 a, .content5 a, .content6 a, .content7 a{
+display: block;
+margin-top: 0%;
+padding: 10px 30px;
+text-decoration: none;
+font-size: 130%;
+transition: 0.6s ease;
+color: #FFFF;
+font-family: 'Nova Flat';
+text-transform: uppercase;
+}
+
+@media screen and (max-width:2100px){
+#logo{
+  width: 5%;
+  margin-top: 0%;
+}
+#press{
+   width: 2.5%;
+}
+.tnav a , .srch .srch.srchbtn,.stat .statbtn, .weap .weapbtn{
+   font-size: 125%;
+   padding:15px 20px;
+}
+.descr p{
+  font-size: 400%;
+   width: 30%;
+   height: 30%;
+   margin-left: 45%;
+  margin-top:5%;
+}
+.content1, .content2,.content3{
+  margin-top: 15%;
+  height: 45%;
+}
+.content4,.content5,.content6,.content7{
+  margin-top: 45%;
+  height: 50%;
+}
+.content1 a, .content2 a, .content3 a, .content4 a, .content5 a, .content6 a, .content7 a{
+  font-size: 100%;
+  align-items: center;
+}
+
+}
+
+@media screen and (max-width:1440px){
+#logo{
+  width: 5%;
+  margin-top: 0%;
+}
+#press{
+   width: 2.5%;
+}
+.tnav a , .srch .srch.srchbtn,.stat .statbtn, .weap .weapbtn{
+   font-size: 125%;
+   padding:15px 20px;
+}
+.descr p{
+  font-size: 400%;
+   width: 30%;
+   height: 30%;
+   margin-left: 37.5%;
+  margin-top:5%;
+}
+.content1, .content2,.content3{
+  margin-top: 15%;
+  height: 45%;
+}
+.content4,.content5,.content6,.content7{
+  margin-top: 45%;
+  height: 45%;
+}
+.content1 a, .content2 a, .content3 a, .content4 a, .content5 a, .content6 a, .content7 a{
+  font-size: 100%;
+  align-items: center;
+}
+
+}
+
+
+@media only screen and (max-width:768px){
+#logo{
+  width: 7.5%;
+  margin-top: 0%;
+}
+#press{
+   width: 5%;
+}
+.tnav a , .srch .srchbtn,.stat .statbtn, .weap .weapbtn{
+   font-size: 100%;
+   padding:13px 13px;
+}
+.descr p{
+  font-size: 400%;
+   width: 30%;
+   height: 30%;
+   margin-left: 42.5%;
+  margin-top:5%;
+}
+.content1{
+  margin-top: 35%;
+  height: 42.5%;
+  width: 27.5%;
+  margin-left: 10%;
+}
+.content2{
+  margin-top: 35%;
+  height: 42.5%;
+  width: 27.5%;
+  margin-left: 55%;
+}
+.content3{
+  margin-top: 95%;
+  height: 42.5%;
+  width: 27.5%;
+  margin-left:32.5%;
+}
+
+.content4{
+  margin-top: 155%;
+  height: 42.5%;
+  width: 27.5%;
+  margin-left: 10%;
+}
+.content5{
+  margin-top: 155%;
+  height: 42.5%;
+  width: 27.5%;
+  margin-left: 55%;
+}
+.content6{
+  margin-top: 215%;
+  height: 42.5%;
+  width: 27.5%;
+  margin-left:10%;
+}
+.content7{
+  margin-top: 215%;
+  height: 42.5%;
+  width: 27.5%;
+  margin-left:55%;
+}
+.content1 a, .content2 a, .content3 a, .content4 a, .content5 a, .content6 a, .content7 a{
+  font-size: 120%;
+ 
+}
+}
+
+@media only screen and (max-width:414px){
+#logo{
+  width: 10%;
+  margin-top: 0%;
+}
+#press{
+   width: 5%;
+   margin-top: 2%;
+}
+.tnav a {
+  font-size: 70%;
+   padding:3px 2.75px;
+  padding-top: 2px;
+}
+.srch .srchbtn,.stat .statbtn, .weap .weapbtn{
+   font-size: 70%;
+   padding:1.5px 2.5px;
+}
+.descr p{
+  font-size: 200%;
+   width: 30%;
+   height: 30%;
+   margin-left: 37.5%;
+  margin-top:5%;
+}
+.content1{
+  margin-top: 35%;
+  height: 32.5%;
+  width: 27.5%;
+  margin-left: 10%;
+}
+.content1 img,.content2 img, .content3 img,.content4 img,.content5 img, .content6 img, .content7 img{
+  width: 100%;
+}
+.content2{
+  margin-top: 35%;
+  height: 32.5%;
+  width: 27.5%;
+  margin-left: 55%;
+}
+.content3{
+  margin-top: 95%;
+  height: 32.5%;
+  width: 27.5%;
+  margin-left:32.5%;
+}
+
+.content4{
+  margin-top: 154%;
+  height: 32.5%;
+  width: 27.5%;
+  margin-left: 10%;
+}
+.content5{
+  margin-top: 154%;
+  height: 32.5%;
+  width: 27.5%;
+  margin-left: 55%;
+}
+.content6{
+  margin-top: 215%;
+  height: 32.5%;
+  width: 27.5%;
+  margin-left:10%;
+}
+.content7{
+  margin-top: 215%;
+  height: 32.5%;
+  width: 27.5%;
+  margin-left:55%;
+}
+.content1 a, .content2 a, .content3 a, .content4 a, .content5 a, .content6 a, .content7 a{
+  font-size: 70%;
+  text-align: center;
+ 
+}
+}
+@media only screen and (max-width:375px){
+#logo{
+  width: 10%;
+  margin-top: 7%;
+}
+#press{
+   width: 5%;
+   margin-top: 0%;
+}
+.tnav a {
+  font-size: 67.5%;
+  padding:2px 2px;
+  padding-top: 2px;
+}
+.srch .srchbtn,.stat .statbtn, .weap .weapbtn{
+   font-size: 70%;
+   padding:1.5px 2.25px;
+}
+.descr p{
+  font-size: 150%;
+   width: 30%;
+   height: 30%;
+   margin-left: 37.5%;
+  margin-top:5%;
+}
+.content1{
+  margin-top: 35%;
+  height: 32.5%;
+  width: 27.5%;
+  margin-left: 10%;
+}
+.content1 img,.content2 img, .content3 img,.content4 img,.content5 img, .content6 img, .content7 img{
+  width: 100%;
+}
+.content2{
+  margin-top: 35%;
+  height: 32.5%;
+  width: 27.5%;
+  margin-left: 55%;
+}
+.content3{
+  margin-top: 95%;
+  height: 30%;
+  width: 27.5%;
+  margin-left:32.5%;
+}
+
+.content4{
+  margin-top: 150%;
+  height: 30%;
+  width: 27.5%;
+  margin-left: 10%;
+}
+.content5{
+  margin-top: 150%;
+  height: 30%;
+  width: 27.5%;
+  margin-left: 55%;
+}
+.content6{
+  margin-top: 215%;
+  height: 30%;
+  width: 27.5%;
+  margin-left:10%;
+}
+.content7{
+  margin-top: 215%;
+  height: 30%;
+  width: 27.5%;
+  margin-left:55%;
+}
+.content1 a, .content2 a, .content3 a, .content4 a, .content5 a, .content6 a, .content7 a{
+  font-size: 60%;
+  text-align: center;
+ 
+}
+}

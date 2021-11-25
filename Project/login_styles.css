@@ -1,0 +1,75 @@
+.login_field {
+    width: 70%;
+    border-radius: 25px;
+    margin: 40% 5% 5% 15%;
+    background-color: #000000cf;
+    border: 5px solid #420400;
+    display: table;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    padding: 0 5% 5% 5%;
+}
+
+.login_fields {
+    display: block;
+}
+
+input {
+    width: 70%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 100%;
+    color: white;
+    background-color: transparent;
+    border: hidden;
+    border-bottom: 2px solid #420400;
+    text-align: center;
+    margin: 1% 5% 5% 15%;
+}
+
+.login_button {
+    border-radius: 25px;
+    background-color: #420400;
+    width: 40%;
+    margin: 1% 30% 10% 30%;
+    text-align: center;
+}
+
+.login_button input {
+    margin: unset;
+    padding: 10% 10% 10% 10%;
+}
+
+.login_button:hover {
+    background-color: #310603;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1580922110301-a666f6745565?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #000;
+    margin: 0;
+}
+
+@media only screen and (min-width: 992px) {
+    .login_field {
+        width: 50%;
+        margin: 5% 5% 5% 25%;
+    }
+    .login_button {
+        width: 30%;
+        margin: 10% 30% 10% 35%;
+    }
+    input {
+        font-size: 150%;
+        margin: 1% 5% 5% 15%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Terrorism | Meele Weapons </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="melee.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://www.iconsdb.com/icons/preview/white/gun-5-xxl.png" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script type="text/javascript" src="menu.js"></script>
+        <script type="text/javascript" src="filters.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Montserrat:300,400,600"
+          rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav" onclick="onClickBoth()">
+                <li><a href="home.html"><i class="fa fa-fw fa-home">Home</i></a></li>
+                <li><a href="weapons.html"><i class="fa fa-fw fa-bomb">Weapons</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-bar-chart-o">Statistics</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-exclamation-circle">Worst Attacks</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-user">User</i></a></li>
+                <li><a href="admin.html"><i class="fa fa-fw fa-user-secret">Admin</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-line-chart">About</i></a></li>
+                <li><a href=""><i class="fa fa-gw fa-heart"> Team</i></a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search..">
+            <a class="search-btn" href="">
+                <i class="fa fa-fw fa-search"></i>
+            </a>
+        </div>
+            <div class="filters">
+                <button type="button" class="filter" id="filter" onclick="openSlide()">Filters</button>
+                <div class="side-slide" id="side-slide"> 
+                   <div id="filter-button">
+                      <button class="exit" id="exit" onclick="exitSlide()">&times;</button>
+                    <div>
+                        <button class="all" id="all">All</button><br>
+                        <button class="typo" id="typo" >Type of Weapon</button><br>
+                        <div class="types" id="types">
+                            <button type="button" class="type-btn btn1">Axes</button>
+                            <button type="button" class="type-btn btn2">Bayonets</button>
+                            <button type="button" class="type-btn btn3">Daggers</button>
+                            <button type="button" class="type-btn btn4">Knives</button>
+                            <button type="button" class="type-btn btn5">Machetes</button>
+                            <button type="button" class="type-btn btn6">Swords</button>
+                        </div>
+                        <button class="length-btn" > Blade Length</button><br>
+                        <div class="length" id="length">
+                            <div class="min-length">
+                                <input type="text" placeholder="Min Value"/>
+                            </div>
+                            <div class="max-length">
+                                <input type="text" placeholder="Max Value"/>
+                            </div>
+                        </div>
+                        <button class="steel" id="steel" >Types of Steel</button><br>
+                        <div class="steel-btn" id="steel-btn">
+                            <button type="button" class="steel-btn1">1060</button>
+                            <button type="button" class="steel-btn2">1095</button>
+                            <button type="button" class="steel-btn3">8Cr13MoV</button>
+                            <button type="button" class="steel-btn4">X50crMoV15</button>
+                            <button type="button" class="steel-btn5">Aluminum</button>
+                            <button type="button" class="steel-btn6">AUS-6 stainless</button>
+                            <button type="button" class="steel-btn7">3mm-1075 High Carbon Steel</button>
+                        </div>
+                        <button class="handle" id="handle" >Types of Handles</button>
+                        <div class="handle-btn" id="handle-btn">
+                            <button type="button" class="handle-btn1">Aluminum</button>
+                            <button type="button" class="handle-btn2">Leather</button>
+                            <button type="button" class="handle-btn3">Micarta</button>
+                            <button type="button" class="handle-btn4">Nylon-wrapped</button><br>
+                            <button type="button" class="handle-btn5">Polypropylene</button>
+                            <button type="button" class="handle-btn7">Wood</button>
+                            <button type="button" class="handle-btn6">Reinforced Synthetic Polymer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="infos">
+                <h1>Meele</h1>
+                <h4>Weapons</h4>
+            </div>
+            <div class="content1">
+                <img class="ph1" src="meleewep/ironrain_axe.jpg" alt="">
+                <a href="axe.html">AXE</a>
+            </div>
+            <div class="content2">
+                <img class="ph2" src="meleewep/ironrain_boot_knifer.jpg" alt="">
+                <a href="boot_knife.html">KERSHAW SECRET AGENT BOOT KNIFE</a>
+            </div>
+            <div class="content3">
+                <img class="ph3" src="meleewep/ironrain_cutterr.jpg" alt="">
+                <a href="cutter.html">CUTTER</a>               
+            </div>
+            <div class="content4">
+                <img class="ph4" src="meleewep/ironrain_ka_barr.jpg" alt="">
+                <a href="ka_bar.html">KA-BAR US MARINE CORPS FIGHTING KNIFE</a>
+            </div>
+            <div class="content5">
+                <img class="ph5" src="meleewep/ironrain_knivesr.jpg" alt="">
+                <a href="kunai.html">United Cutlery UC2772 Expendables Kunai</a>
+            </div>
+            <div class="content6">
+                <img class="ph6" src="meleewep/ironrain_macetar.jpg" alt="">
+                <a href="maceta.html">CONDOR TOOL & KNIFE DISCORD MACHETE</a>
+            </div>
+            <div class="content7">
+                <img class="ph7" src="meleewep/ironrain_satarr.jpg" alt="">
+                <a href="meat_cut.html">MEAT CUTTER</a>
+            </div>
+            
+        
+        <audio id="song">
+            <source src="music/LORN-ANVIL.mp3" type="audio/mpeg">
+        </audio>
+            
+    </body>
+</html>

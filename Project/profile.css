@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+ .tnav{
+    background-color: #000000df;
+    width: 100%;
+    overflow: hidden;
+ }
+ 
+ .tnav a{
+    float: right;
+    display: block;
+    color: #FFFF;
+    text-align: center;
+    font-family: 'Nova Flat';
+    padding: 1% 1% 1% 1%;
+    border-right: 1px solid #FFFF;
+    text-decoration: none;
+    width:8.5%;
+    font-size: 80%;
+ }
+ .active{
+    background-color: #420400;
+ }
+ .weap,.stat, .srch{
+    float: right;
+    overflow: hidden;
+    border-color: rgba(0, 0,0,0);
+    border-width: inherit;
+    border-right: 1px solid #FFFF;
+ }
+
+ .weap .weapbtn, .stat .statbtn, .srch .srchbtn{
+    border-color: rgba(155, 111, 111, 0);
+    padding:1% 1% 1% 1%;
+    width:8.5%;
+    font-size: 80%;
+    font-family: 'Nova Flat';
+    text-align: center;
+    background-color: inherit;
+    color: #FFFF;
+ }
+
+ .weap-content, .stat-content, .srch-content{
+    display: none;
+    position: absolute;
+    background-color: #000000df;
+    border-bottom: 1px solid #FFFF;
+ }
+ 
+ .weap-content a, .stat-content a{
+    float:none;
+    text-decoration: none;
+    width: inherit;
+    color: #FFFF;
+    padding: 1% 1% 1% 1%;
+    display: block;
+    text-align: center;
+ 
+ }
+ .tnav a:hover, .weap:hover, .stat:hover, .srch:hover{
+    background-color: #420400;
+    color: #FFFF;
+  }
+
+  .weapbtn:hover, .stat .statbtn:hover , .srch .srchbtn:hover{
+   background-color: #420400;
+   color: #FFFF;
+  }
+ 
+  .weap-content a:hover, .stat-content a:hover{
+    background-color: #420400;
+    color: #FFFF;
+  }
+  
+  .weap:hover .weap-content, .stat:hover .stat-content, .srch:hover .srch-content {
+    display: block;
+  }
+ 
+  
+  .srch-content input[type=text] {
+    padding: 1% 1% 1% 1%;
+    margin-top: 0;
+    width: 95%;
+    border: none;
+  }
+
+  .srch-content button {
+    background: #420400;
+    border: none;
+    cursor: pointer;
+    color: #FFFF;
+    align-self: center;
+    padding: 1% 1% 1% 1%;
+    width: 100%;
+  }
+  
+  #logo{
+   display: none;
+  }
+ 
+
+body {
+    background-image: url("purple2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #000;
+    margin: 0;
+    color:white;
+}
+
+.pfp img{
+
+    width:15%;
+    height:7%;
+margin-left: 43%;
+margin-right: 40%;
+}
+
+.informatii {
+
+    
+
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+    background-color: rgba(10, 10, 10, 0.7);
+    border: 3px solid #420400;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 15% ;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    
+}
+
+
+.column {
+    margin-bottom: 5%;
+    margin-top: 3%;
+    background-color: rgba(10, 10, 10, 0.7);
+    border: 3px solid #420400;
+    display:flex;
+    justify-content:center;
+    margin-left: 13%;
+    text-align: center;
+    float: left;
+    border-radius: 10px;
+    width: 15%;
+    height: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1px;
+   padding-left: 1px;
+}
+
+    .column:hover {
+        background-color: #420400;
+    }
+
+
+.row::after {
+        display:flex;
+    justify-content:center;
+    
+    clear: both;
+    display: table;
+    padding:1%;
+}
+
+html{
+    overflow-y: scroll;
+}
+.tit{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 992px){
+ 
+    #logo{
+    display: unset;
+    position:absolute;
+    margin-left: -1%;
+    margin-top: 0.25%; 
+    width:5%;
+    height: 5%;
+    }
+ 
+    .tnav a{
+       font-size: 100%;
+    }
+ 
+    .weap .weapbtn, .stat .statbtn, .srch .srchbtn{
+       font-size: 100%;
+    }
+ 
+    .weap, .stat, .srch{
+       width: 10%;
+    }
+ 
+    .weap-content, .stat-content{
+       width: 10%;
+    }
+ 
+    .weap-content a, .stat-content a{
+       width: 98%;
+    }
+ 
+ 
+ }
+ 
+ 

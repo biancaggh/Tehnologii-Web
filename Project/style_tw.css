@@ -1,0 +1,242 @@
+*{
+   margin: 0%;
+   padding: 0;
+}
+body{
+   background-image:url('photos/imgg.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.tnav{
+   background-color: rgba(0, 0,0,0.3);
+   overflow: hidden;
+}
+
+.tnav a{
+   float: right;
+   display: block;
+   color: #FFFF;
+   text-align: center;
+   font-family: 'Nova Flat';
+   font-size: 130%;
+   padding: 15px 20px;
+   border-right: 1px solid #FFFF;
+   text-decoration: none;
+}
+.active{
+   background-color: #420400;
+}
+.weap,.stat, .srch{
+   float: right;
+   overflow: hidden;
+}
+.weap .weapbtn, .stat .statbtn, .srch .srchbtn{
+   font-size: 125%;
+   border-color: rgba(0, 0,0,0);
+   padding:15px 20px;
+   background-color: inherit;
+   color: #FFFF;
+   border-right: 1px solid #FFFF;
+}
+.weap-content, .stat-content, .srch-content{
+   display: none;
+   position: absolute;
+   background-color: rgba(0, 0,0,0.3);
+   width: inherit;
+}
+
+.weap-content a, .stat-content a{
+   float:none;
+   text-decoration: none;
+   color: #FFFF;
+   padding: 10px 15px;
+   display: block;
+   text-align: center;
+   font-size: 125%;
+   border-bottom: 1px solid #FFFF;
+
+}
+.tnav a:hover, .weap:hover .weapbtn, .stat:hover .statbtn , .srch:hover .srchbtn{
+   background-color: #420400;
+   color: #FFFF;
+ }
+
+ .weap-content a:hover, .stat-content a:hover{
+   background-color: #420400;
+   color: #FFFF;
+ }
+ 
+ .weap:hover .weap-content, .stat:hover .stat-content, .srch:hover .srch-content {
+   display: block;
+ }
+
+ 
+ .srch-content input[type=text] {
+   padding: 15px 6px;
+   margin-top: 0%;
+   font-size: 65%;
+   border: none;
+ }
+ .srch-content button {
+   width: 100%;
+   background: #420400;
+   font-size:100%;
+   border: none;
+   cursor: pointer;
+   color: #FFFF;
+   align-self: center;
+   padding: 15px 15px;
+ }
+ 
+ #logo{
+    position:absolute;
+    margin-left: -1%;
+    margin-top: 0.25%; 
+    width:5%
+ }
+ .boxa{
+   width: 30%;
+   height: 30%;
+   margin-left: 35%;
+  margin-top:15%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border:groove;
+  border-color: #420400;
+  text-align: center;
+  padding: 30px;
+  color:#FFFF;
+  font-size: 270%;
+  font-family:'Nova Flat';
+}
+#press{
+   width:3.5%; 
+   float: right;
+   margin-top: 2.5%;
+   margin-right: 2%;
+}
+
+
+@media only screen and (max-width:360px) {
+   .tnav{
+      width: 100%;
+   }
+   .tnav a{
+      padding: 20px 100px;
+      font-size: 100%;
+   }
+   .weap,.srch,.stat{
+      border-color: rgba(0, 0,0,0);
+      padding: 0px 100px;
+      position: inherit;
+   }
+  
+   .weap .weapbtn, .stat .statbtn,.srch .srchbtn{
+      font-size: 100%;
+   }
+   #logo{
+      width: 15%;
+   }
+   #press{
+      width: 10%;
+   }
+   .boxa{
+      margin-top: 20%;
+      margin-left:17.5%;
+      width: 50%;
+      font-size: 200%;
+   }
+}
+
+@media screen and (max-width:1440px){
+   #logo{
+     width: 5%;
+     margin-top: 0%;
+   }
+   #press{
+      width: 2.5%;
+   }
+   .tnav a , .srch .srch.srchbtn,.stat .statbtn, .weap .weapbtn{
+      font-size: 125%;
+      padding:15px 20px;
+   }
+   .boxa{
+      width: 30%;
+      height: 30%;
+      margin-left: 35%;
+     margin-top:15%;
+   }
+   
+ }
+ 
+ @media only screen and (max-width:768px){
+   #logo{
+     width: 10%;
+     margin-top: 0%;
+   }
+   #press{
+      width: 5%;
+   }
+   .tnav a , .srch .srchbtn,.stat .statbtn, .weap .weapbtn{
+      font-size: 100%;
+      padding:13px 13px;
+   }
+   .boxa{
+      margin-top: 40%;
+      margin-left:20%;
+      width: 50%;
+      font-size: 175%;
+   }
+ }
+ 
+ @media only screen and (max-width:414px){
+   #logo{
+     width: 10%;
+     margin-top: 0%;
+   }
+   #press{
+      width: 5%;
+      margin-top: 2%;
+   }
+   .tnav a {
+     font-size: 70%;
+      padding:3px 2.75px;
+     padding-top: 2px;
+   }
+   .srch .srchbtn,.stat .statbtn, .weap .weapbtn{
+      font-size: 70%;
+      padding:1.5px 2.5px;
+   }
+  .boxa{
+   margin-top: 40%;
+   margin-left:20%;
+   width: 50%;
+   font-size: 140%;}
+}
+
+@media only screen and (max-width:375px){
+   #logo{
+      width: 10%;
+      margin-top: 7%;
+    }
+    #press{
+       width: 5%;
+       margin-top: 2%;
+    }
+    .tnav a {
+      font-size: 67.5%;
+      padding:2px 2px;
+      padding-top: 2px;
+    }
+    .srch .srchbtn,.stat .statbtn, .weap .weapbtn{
+       font-size: 70%;
+       padding:1.5px 2.25px;
+    }
+  
+ }.boxa{
+   margin-top: 40%;
+   margin-left:20%;
+   width: 50%;
+   font-size: 120%;
+}

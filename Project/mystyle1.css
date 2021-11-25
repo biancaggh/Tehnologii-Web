@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+ .tnav{
+    background-color: #000000df;
+    width: 100%;
+    overflow: hidden;
+ }
+ 
+ .tnav a{
+    float: right;
+    display: block;
+    color: #FFFF;
+    text-align: center;
+    font-family: 'Nova Flat';
+    padding: 1% 1% 1% 1%;
+    border-right: 1px solid #FFFF;
+    text-decoration: none;
+    width:8.5%;
+    font-size: 80%;
+ }
+ .active{
+    background-color: #420400;
+ }
+ .weap,.stat, .srch{
+    float: right;
+    overflow: hidden;
+    border-color: rgba(0, 0,0,0);
+    border-width: inherit;
+    border-right: 1px solid #FFFF;
+ }
+
+ .weap .weapbtn, .stat .statbtn, .srch .srchbtn{
+    border-color: rgba(155, 111, 111, 0);
+    padding:1% 1% 1% 1%;
+    width:8.5%;
+    font-size: 80%;
+    font-family: 'Nova Flat';
+    text-align: center;
+    background-color: inherit;
+    color: #FFFF;
+ }
+
+ .weap-content, .stat-content, .srch-content{
+    display: none;
+    position: absolute;
+    background-color: #000000df;
+    border-bottom: 1px solid #FFFF;
+ }
+ 
+ .weap-content a, .stat-content a{
+    float:none;
+    text-decoration: none;
+    width: inherit;
+    color: #FFFF;
+    padding: 1% 1% 1% 1%;
+    display: block;
+    text-align: center;
+ 
+ }
+ .tnav a:hover, .weap:hover, .stat:hover, .srch:hover{
+    background-color: #420400;
+    color: #FFFF;
+  }
+
+  .weapbtn:hover, .stat .statbtn:hover , .srch .srchbtn:hover{
+   background-color: #420400;
+   color: #FFFF;
+  }
+ 
+  .weap-content a:hover, .stat-content a:hover{
+    background-color: #420400;
+    color: #FFFF;
+  }
+  
+  .weap:hover .weap-content, .stat:hover .stat-content, .srch:hover .srch-content {
+    display: block;
+  }
+ 
+  
+  .srch-content input[type=text] {
+    padding: 1% 1% 1% 1%;
+    margin-top: 0;
+    width: 95%;
+    border: none;
+  }
+
+  .srch-content button {
+    background: #420400;
+    border: none;
+    cursor: pointer;
+    color: #FFFF;
+    align-self: center;
+    padding: 1% 1% 1% 1%;
+    width: 100%;
+  }
+  
+  #logo{
+   display: none;
+  }
+ 
+body {
+    font-family:"Roboto" ;
+    background-image: url("photos/trist.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    color: white;
+ 
+}
+.tit{
+    margin-top: 6%;
+    text-align: center;
+}
+
+.subtitlu{
+    margin-bottom: 2%;
+    text-decoration:underline;
+}
+.sapt {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgba(10, 10, 10, 0.7);
+    border: 3px solid #420400;
+    text-align: justify;
+
+    padding: 3%;
+    border-radius: 10px;
+}
+
+
+
+
+
+.column {
+    display: inline-block;
+    width: 40%;
+    margin: 4%;
+}
+
+
+.row::after {
+
+    content: "  ";
+    clear: both;
+    
+
+
+}
+
+.space{
+   margin-bottom: 2%;
+}
+
+.camp {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgba(10, 10, 10, 0.7);
+    border: 3px solid #420400;
+    text-align: justify;
+    
+    padding: 3%;
+    border-radius: 10px;
+}
+
+
+.yaz {
+    margin-top: 2%;
+    margin-left: 5%;
+   margin-bottom:5%;
+    margin-right: 5%;
+    background-color: rgba(10, 10, 10, 0.7);
+    border: 3px solid #420400;
+    text-align: justify;
+   
+    padding: 3%;
+    border-radius: 10px;
+}
+    
+@media only screen and (min-width: 992px){
+ 
+    #logo{
+    display: unset;
+    position:absolute;
+    margin-left: -1%;
+    margin-top: 0.25%; 
+    width:5%;
+    height: 5%;
+    }
+ 
+    .tnav a{
+       font-size: 100%;
+    }
+ 
+    .weap .weapbtn, .stat .statbtn, .srch .srchbtn{
+       font-size: 100%;
+    }
+ 
+    .weap, .stat, .srch{
+       width: 10%;
+    }
+ 
+    .weap-content, .stat-content{
+       width: 10%;
+    }
+ 
+    .weap-content a, .stat-content a{
+       width: 98%;
+    }
+ 
+ 
+ }
+ 
+ 

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Terrorism | Machine Guns </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="machineguns.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://www.iconsdb.com/icons/preview/white/gun-5-xxl.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <nav>
+            <div>
+                <img src="photos/logoo.png" id="logo" alt="Logo">
+            </div>
+           <div class="tnav">
+             <div class="srch">
+                <button class="srchbtn"><i class="fa fa-fw fa-search"></i> Search</button>
+                <div class="srch-content">
+                  <form >
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Go for It</button>
+                  </form>
+               </div>
+             </div>
+                <a href="Team.html"><i class="fa fa-fw fa-heart"></i>Team</a>
+                <a href="report.html"><i class="fa fa-fw fa-line-chart"></i>About</a>
+                <a href="profile_page.html"><i class="fa fa-fw fa-user"></i> User</a>
+                <div class="stat">
+                   <button class="statbtn"><i class="fa fa-fw fa-bar-chart-o"></i> Statistics</button>
+                   <div class="stat-content">
+                        <a href="statistcs.html"> General</a> 
+                        <a href="worstattacks.html">Worst attacks</a> 
+                   </div>
+                </div>
+                <div class="weap">
+                    <button class="weapbtn" ><i class="fa fa-fw fa-bomb"></i> Weapons</button>
+                    <div class="weap-content">
+                        <a href="weapons.html">General</a>
+                        <a href="melee.html" >Melee Weapons</a> 
+                        <a href="pistols.html">Pistols</a> 
+                        <a href="shotguns.html">Shotguns</a> 
+                        <a href="rifles.html" >Rifles</a> 
+                        <a href="machineguns.html">Machine guns</a> 
+                        <a href="explosives.html">Explosives</a> 
+                     </div>
+                 </div> 
+                <a href="tw.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            </div>
+        </nav>
+        <div>
+            <div class="audio">
+                <img src="photos/song.png" id="press" alt="" >
+            </div>
+        </div>
+        <div class="descr">
+            <p>Machine Guns</p>
+        </div>
+            <div class="content1">
+                <img class="front" src="machine_guns/ironrain_browing.jpg" alt="">
+                 <a href="browing_m2.html">M2 BROWING </a>
+            </div>
+            <div class="content2">
+                <img class="front" src="machine_guns/ironrain_dshk.jpg" alt="">
+                 <a href="">DSHK </a>
+            </div>
+            <div class="content3">
+                <img class="front" src="machine_guns/ironrain_fn_minimi.jpg" alt="">
+                 <a href="">FN MINIMI </a>
+            </div>
+            <div class="content4">
+                <img class="front" src="machine_guns/ironrain_mauser.jpg" alt="">
+                 <a href="">MAUSER RHEINMETTAL MG3 </a>
+            </div>
+            <div class="content5">
+                <img class="front" src="machine_guns/ironrain_norinco.jpg" alt="">
+                 <a href="">TYPE 80 </a>
+            </div>
+            <div class="content6">
+                <img class="front" src="machine_guns/ironrain_nsv.jpg" alt="">
+                 <a href="">NSV UTES </a>
+            </div>
+            <div class="content7">
+                <img class="front" src="machine_guns/ironrain_pkm.jpg" alt="">
+                 <a href="">PKM KALASHNIKOV  </a>
+            </div>
+            <div class="content8">
+                <img class="front" src="machine_guns/ironrain_rpd.jpg" alt="">
+                 <a href="">Degtyarev RPD </a>
+            </div>
+            <div class="content9">
+                <img class="front" src="machine_guns/ironrain_rpk.jpg" alt="">
+                 <a href="">RPK-74 KALASHNIKOV </a>
+            </div>
+            <div class="content10">
+                <img class="front" src="machine_guns/ironrain_w85.jpg" alt="">
+                 <a href="">W85 </a>
+            </div>
+        <audio id="song">
+            <source src="machine_guns/ACDC-Shoot_To_Thrill.mp3" type="audio/mpeg">
+        </audio>
+
+        <script>
+           var song = document.getElementById("song");
+           var press = document.getElementById("press");
+
+           press.onclick = function(){
+               if(song.paused){
+                   song.play();
+               }else{
+                   song.pause();
+               }
+           }
+       </script>
+    </body>
+
+</html> 

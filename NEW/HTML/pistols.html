@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Terrorism | Pistols </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="pistols.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://www.iconsdb.com/icons/preview/white/gun-5-xxl.png" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script type="text/javascript" src="menu.js"></script>
+        <script type="text/javascript" src="filters.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Montserrat:300,400,600"
+          rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav" onclick="onClickBoth()">
+                <li><a href="home.html"><i class="fa fa-fw fa-home">Home</i></a></li>
+                <li><a href="weapons.html"><i class="fa fa-fw fa-bomb">Weapons</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-bar-chart-o">Statistics</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-exclamation-circle">Worst Attacks</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-user">User</i></a></li>
+                <li><a href="admin.html"><i class="fa fa-fw fa-user-secret">Admin</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-line-chart">About</i></a></li>
+                <li><a href=""><i class="fa fa-gw fa-heart"> Team</i></a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search..">
+            <a class="search-btn" href="">
+                <i class="fa fa-fw fa-search"></i>
+            </a>
+        </div>
+            <div class="filters">
+                <button type="button" class="filter" id="filter" onclick="openSlide()">Filters</button>
+                <div class="side-slide" id="side-slide"> 
+                   <div id="filter-button">
+                      <button class="exit" id="exit" onclick="exitSlide()">&times;</button>
+                    <div>
+                        <button class="all" id="all">All</button><br>
+                        <button class="origin" id="origin" >Country of Origin</button><br>
+                        <div class="org" id="org">
+                            <button type="button" class="org-btn btn1">Austria</button>
+                            <button type="button" class="org-btn btn2">Belgium</button>
+                            <button type="button" class="org-btn btn3">Czechoslovakia</button>
+                            <button type="button" class="org-btn btn4">Germany</button>
+                            <button type="button" class="org-btn btn5">Italy</button>
+                            <button type="button" class="org-btn btn6">Russia</button>
+                        </div>
+                        <button class="typo" id="typo" >Type</button><br>
+                        <div class="types" id="types">
+                            <button type="button" class="type-btn btn1">Beretta</button>
+                            <button type="button" class="type-btn btn2">Browing</button>
+                            <button type="button" class="type-btn btn3">CZUB</button>
+                            <button type="button" class="type-btn btn4">Glock</button>
+                            <button type="button" class="type-btn btn5">Tokarev</button>
+                            <button type="button" class="type-btn btn6">Walther</button>
+                        </div>
+                        
+                        <button class="length-btn" > Barrel Length</button><br>
+                        <div class="length" id="length">
+                            <div class="min-length">
+                                <input type="text" placeholder="Min Value"/>
+                            </div>
+                            <div class="max-length">
+                                <input type="text" placeholder="Max Value"/>
+                            </div>
+                        </div>
+                        <button class="calibre" id="calibre" >Calibre</button><br>
+                        <div class="calibre-btn" id="calibre-btn">
+                            <button type="button" class="calibre-btn1">4.5 mm</button>
+                            <button type="button" class="calibre-btn2">7.62 mm</button>
+                            <button type="button" class="calibre-btn3">9 mm</button>
+                            <button type="button" class="calibre-btn4">9.08 mm</button>
+                        </div>
+                        <button class="cartridge" id="cartridge" >Cartridge</button>
+                        <div class="cartridge-btn" id="cartridge-btn">
+                            <button type="button" class="cartridge-btn1">7.62x25 mm</button>
+                            <button type="button" class="cartridge-btn2">7.65x21 mm</button>
+                            <button type="button" class="cartridge-btn3">9x19 mm</button>
+                        </div>
+                        <button class="feed" id="feed">Feeding System</button>
+                        <div class="feed-btn" id="feed-btn">
+                            <button type="button" class="feed1">Detachable Box Magazine</button>
+                        </div>
+                        <button class="range_ef" id="range_ef">Effective Range</button>
+                        <div class="range-btn" id="range-btn">
+                            <button type="button" class="range1">50 m</button>
+                        </div>
+                        <button class="mat" id="mat">Feeding System</button>
+                        <div class="feed-btn" id="feed-btn">
+                            <button type="button" class="mat1">ABS</button>
+                            <button type="button" class="mat2">Polymer</button>
+                            <button type="button" class="mat3">Steel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="infos">
+                <h1>Pistols</h1>
+            </div>
+            <div class="content1">
+                <img src="pistols/ironrain_beretta.jpg" alt="">
+                <a href="beretta.html">BERETTA M92 BLOWBACK</a>
+            </div>
+            <div class="content2">
+                <img src="pistols/ironrain_browing.jpg" alt="">
+                <a href="">Browning Hi-Power</a>         
+            </div>
+            <div class="content3">
+                <img   src="pistols/ironrain_cz75.jpg" alt="">
+                <a href="">CZ 75</a>
+            </div>
+            <div class="content4">
+                <img   src="pistols/ironrain_glock17.jpg" alt="">
+                <a href="">GLOCK 17 GEN 4 CO2 PISTOL</a>
+            </div>
+            <div class="content5">
+                <img   src="pistols/ironrain_glock19.jpg" alt="">
+                <a href="">GLOCK 19</a>            
+            </div>
+            <div class="content6">
+                <img   src="pistols/ironrain_tt-30.jpg" alt="">
+                <a href="">TT-30</a>
+            </div>
+            <div class="content7">
+                <img   src="pistols/ironrain_walther99.jpg" alt="">
+                <a href="">WALTHER P99</a>
+            </div>
+            
+        
+        <audio id="song">
+            <source src="music/LORN-ANVIL.mp3" type="audio/mpeg">
+        </audio>
+            
+    </body>
+</html>

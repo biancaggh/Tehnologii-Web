@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+ .tnav{
+    background-color: #000000df;
+    width: 100%;
+    overflow: hidden;
+ }
+ 
+ .tnav a{
+    float: right;
+    display: block;
+    color: #FFFF;
+    text-align: center;
+    font-family: 'Nova Flat';
+    padding: 1% 1% 1% 1%;
+    border-right: 1px solid #FFFF;
+    text-decoration: none;
+    width:8.5%;
+    font-size: 80%;
+ }
+ .active{
+    background-color: #420400;
+ }
+ .weap,.stat, .srch{
+    float: right;
+    overflow: hidden;
+    border-color: rgba(0, 0,0,0);
+    border-width: inherit;
+    border-right: 1px solid #FFFF;
+ }
+
+ .weap .weapbtn, .stat .statbtn, .srch .srchbtn{
+    border-color: rgba(155, 111, 111, 0);
+    padding:1% 1% 1% 1%;
+    width:8.5%;
+    font-size: 80%;
+    font-family: 'Nova Flat';
+    text-align: center;
+    background-color: inherit;
+    color: #FFFF;
+ }
+
+ .weap-content, .stat-content, .srch-content{
+    display: none;
+    position: absolute;
+    background-color: #000000df;
+    border-bottom: 1px solid #FFFF;
+ }
+ 
+ .weap-content a, .stat-content a{
+    float:none;
+    text-decoration: none;
+    width: inherit;
+    color: #FFFF;
+    padding: 1% 1% 1% 1%;
+    display: block;
+    text-align: center;
+ 
+ }
+ .tnav a:hover, .weap:hover, .stat:hover, .srch:hover{
+    background-color: #420400;
+    color: #FFFF;
+  }
+
+  .weapbtn:hover, .stat .statbtn:hover , .srch .srchbtn:hover{
+   background-color: #420400;
+   color: #FFFF;
+  }
+ 
+  .weap-content a:hover, .stat-content a:hover{
+    background-color: #420400;
+    color: #FFFF;
+  }
+  
+  .weap:hover .weap-content, .stat:hover .stat-content, .srch:hover .srch-content {
+    display: block;
+  }
+ 
+  
+  .srch-content input[type=text] {
+    padding: 1% 1% 1% 1%;
+    margin-top: 0;
+    width: 95%;
+    border: none;
+  }
+
+  .srch-content button {
+    background: #420400;
+    border: none;
+    cursor: pointer;
+    color: #FFFF;
+    align-self: center;
+    padding: 1% 1% 1% 1%;
+    width: 100%;
+  }
+  
+  #logo{
+   display: none;
+  }
+ 
+  .tit{
+     margin-top: 10%;
+     text-align: center;
+     font-size: 200%;
+  }
+body {
+
+   background-color: rgb( 103, 101, 101);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+
+   margin: 0;
+   color:white;
+ 
+}
+.Text{
+   margin-top: -32%;
+   margin-left: 47%;
+   margin-right: 1%;
+   background-color: rgba(10, 10, 10, 0.7);
+   border: 3px solid #420400;
+ 
+ 
+   border-radius: 10px;
+   font-size: 80%;
+   overflow-x:auto;
+}
+
+p{
+   padding:3% 3% 3% 3%;
+   text-align: left;
+}
+
+.poze img{
+   margin-top: 6%;
+   margin-bottom: 3%;
+   margin-right: 4%;
+   margin-left: 3% ;
+   width: 40%;
+   height: 40%;
+}
+
+    
+@media only screen and (min-width: 992px){
+  
+    #logo{
+    display: unset;
+    position:absolute;
+    margin-left: -1%;
+    margin-top: 0.25%; 
+    width:5%;
+    height: 5%;
+    }
+ .Text{
+   margin-top: -30%;
+   font-size: 100%;
+ }
+    .tnav a{
+       font-size: 100%;
+    }
+ 
+    .weap .weapbtn, .stat .statbtn, .srch .srchbtn{
+       font-size: 100%;
+    }
+ 
+    .weap, .stat, .srch{
+       width: 10%;
+    }
+ 
+    .weap-content, .stat-content{
+       width: 10%;
+    }
+ 
+    .weap-content a, .stat-content a{
+       width: 98%;
+    }
+ 
+ 
+ }
+ 

@@ -1,0 +1,291 @@
+*{
+    margin: 0%;
+    padding: 0;
+
+ }
+ body{
+  background-image:url('photos/purple2.jpg');
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+
+#logo{
+     position:absolute;
+     margin-top: 0%; 
+     width: 5%;
+    
+  }
+  .boxa{
+   position: absolute;
+   width: 40%;
+   height: 10%;
+   margin-left:32.5%;
+   margin-top:17.5%;
+   padding: 5px;
+   border: rgba(0, 0,0,0);
+   color:#FFFF;
+   font-size: 1000%;
+   font-family:'Nora Flat';
+   
+ }
+.sign{
+    position: absolute;
+    width: 7.5%;
+    height: 5%;
+    margin-top: 29%;
+    margin-left: 38.5%;
+    background-color: rgba(0, 0,0,0.3);
+    border-style: groove;
+    border-color: #420400;
+    display: block;
+    border-radius: 50px;
+}
+.sign a{
+    display: block;
+    margin-top: 0%;
+    font-family: 'Nora Flat';
+    font-size: 150%;
+    padding-top: 6%;
+    padding-bottom: 7%;
+    padding-left: 25%;
+    transition: 0.6s ease;
+    color: #FFFF;
+}
+.sign a:hover{
+    background-color: #420400;
+    color:black;
+    border-radius: 50px;
+}
+.sign a:active{
+    background-color: #420400;
+    color:black;
+    border-radius: 50px;
+}
+
+.log{
+    position: absolute;
+    width: 7.5%;
+    height: 5%;
+    margin-top: 29%;
+    margin-left: 52.5%;
+    background-color: rgba(0, 0,0,0.3);
+    border-style: groove;
+    border-color: #420400;
+    border-radius: 50px;
+}
+.log a{
+    display: block;
+    margin-top: 0%;
+    font-family: 'Nora Flat';
+    font-size: 150%;
+    padding-top: 6%;
+    padding-bottom: 7%;
+    padding-left: 25%;
+    transition: 0.6s ease;
+    color: #FFFF;
+}
+.log a:hover{
+    background-color: #420400;
+    color:black;
+    border-radius: 50px;
+}
+.log a:active{
+    background-color: #420400;
+    color:black;
+    border-radius: 50px;
+}
+.box{
+    margin-left: 820px;
+}
+.loading span {
+    display: inline-block;
+    vertical-align: middle;
+    background: #000;
+    width: 0.75%;
+    height: .6em;
+    border-radius: .6em;
+    animation: loading 1s infinite alternate;
+    margin-left:2%;
+    margin-top: 57.5%;
+    
+  }
+  
+  .loading span:nth-of-type(2) {
+    background: #420400;
+    animation-delay: 0.2s;
+  }
+  .loading span:nth-of-type(3) {
+    background: #7a1515;
+    animation-delay: 0.4s;
+  }
+  .loading span:nth-of-type(4) {
+    background: #802020;
+    animation-delay: 0.6s;
+  }
+  .loading span:nth-of-type(5) {
+    background: #b95252;
+    animation-delay: 0.8s;
+  }
+  .loading span:nth-of-type(6) {
+    background: #eeadad;
+    animation-delay: 1.0s;
+  }
+  .loading span:nth-of-type(7) {
+    background: #FFFF;
+    animation-delay: 1.2s;
+  }
+
+  @keyframes loading {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+ @media  screen and (max-width:768px) {
+  #logo{
+    width: 17.5%;
+    margin-left: -3.5%;
+  } 
+  .sign{
+      margin-top:60%;
+      width: 25%;
+      height: 7.5%;
+      margin-left: 37.5%;
+   }
+   .log{
+    margin-top:75%;
+    width: 25%;
+    height: 7.5%;
+    margin-left: 37.5%;
+ }
+ .log a, .sign a{
+   padding-left: 20%;
+   font-size: 260%;
+   padding-top: 8%;
+ }
+   .boxa {
+     margin-top: 30%;
+     font-size: 750%;
+     margin-left: 22%;
+   }
+  
+ }
+
+
+ @media  screen and (max-width:375px) and (max-height:812px) {
+  #logo{
+    width: 25%;
+    margin-left: -3.5%;
+  } 
+  .sign{
+      margin-top:85%;
+      width: 35%;
+      height: 5%;
+      margin-left: 35%;
+   }
+   .log{
+    margin-top:105%;
+    width: 30%;
+    height: 5%;
+    margin-left: 35%;
+ }
+   .boxa{
+     margin-top: 40%;
+     font-size: 400%;
+     margin-left: 12%;
+   }
+   .log a, .sign a{
+    font-size: 225%;
+    padding-left: 20%;
+    padding-top:2%;
+  }
+   
+ }
+ @media  screen and (max-width:414px) {
+  #logo{
+    width: 25%;
+    margin-left: -3.5%;
+  } 
+  .sign{
+      margin-top:85%;
+      width: 35%;
+      height: 7%;
+      margin-left: 30%;
+   }
+   .log{
+    margin-top:105%;
+    width: 35%;
+    height: 7%;
+    margin-left: 30%;
+ }
+   .boxa{
+     margin-top: 40%;
+     font-size: 400%;
+     margin-left: 20%;
+   }
+   .log a, .sign a{
+    font-size: 140%;
+    padding-left: 25%;
+    padding-top: 9.5%;
+  }
+   
+ }
+
+ @media  screen and (max-width:1440px) {
+  #logo{
+    width: 7.5%;
+    margin-left: -1.5%;
+    
+  } 
+  .sign{
+      margin-top:30%;
+      width: 7.5%;
+      height: 5%;
+      margin-left: 37%;
+   }
+   .log{
+    margin-top:30%;
+    width: 7.5%;
+    height: 5%;
+    margin-left: 49%;
+ }
+ .log a, .sign a{
+   padding-left: 20%;
+   font-size: 150%;
+   padding-top: 8%;
+ }
+   .boxa {
+     margin-top: 20%;
+     font-size: 750%;
+     margin-left: 30%;
+   }
+   .loading{
+     margin-left: -40%;
+   }
+  .loading span{
+    margin-top: 60%;
+    margin-left: 2%;
+  }
+ }
+@media screen and (max-width:1280px) {
+  .boxa{
+    margin-top: 19.5%;
+    margin-left: 27.5%;
+  }
+  .log, .sign{
+    margin-top: 31%;
+  }
+  .loading{
+    margin-left: -65%;
+  }
+ .loading span{
+   margin-top: 62.5%;
+   margin-left: 2%;
+ }
+  
+}

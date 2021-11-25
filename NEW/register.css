@@ -1,0 +1,226 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  font-family:'PT Sans', sans-serif;
+  background-image:url('photos/purple2.jpg');
+  background-size: cover;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url(photos/purple2.jpg) center no-repeat;
+  background-size: cover;
+}
+.header{
+  text-align:center;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  color: #FFFF;
+}
+
+.header h1{
+  font-family: 'Josefin Sans',sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.header h3{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+form, .content {
+  width:30%;
+  background:linear-gradient(rgba(148,42,42,.8),rgba(185,129,129,.6)), url(https://images.unsplash.com/photo-1580922110301-a666f6745565?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80) center no-repeat;
+  background-size: cover;
+  position:absolute;
+  margin-top: 25%;
+  margin-left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+  
+}
+
+form a{
+  text-decoration: none;
+  color: #FFFF;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+form p{
+  margin-left: 23.5%;
+  text-decoration: none;
+  color: #420400;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2.5%;
+}
+
+
+.input-group{
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.input-group input{
+  width: 70%;
+  margin-left: 9%;
+  padding: 15px 15px 15px 50px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background: rgba(0,0,0,0.6);
+  font-family: 'Josefin Sans',sans-serif;
+  font-size: 16px;
+  color: #FFFF;
+}
+
+.input-group i{
+  position: absolute;
+  top: 13px;
+  margin-left: 12.5%;
+  font-size: 18px;
+  color: #597081;
+}
+
+.btn{
+  width: 50%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: #3E6559;
+  color: #FFFF;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 25%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 2.5%;
+}
+
+.form button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+.form button:active{
+  transform: translateY(0);
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #420400; 
+  color: #420400; 
+  background: #FFFF; 
+  border-radius: 5px; 
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.success {
+  color: #3E6559; 
+  background: #FFFF; 
+  border: 1px solid #3E6559;
+  margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.wrapper{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}   
+
+.file-upload{
+  height:50px;
+  width:50px;
+  border-radius: 100px;
+  position:relative;  
+  display:flex;
+  justify-content:center;
+  align-items: center;  
+  border:4px solid #FFFF;
+  overflow:hidden;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 50%, #FFFF 50%);
+  background-size: 100% 200%;
+  transition: all 1s;
+  color: #FFFF;
+  font-size:50px;
+  
+}
+
+input[type='file']{
+  height:40px;
+  width:40px;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0;
+  cursor:pointer;
+}
+
+.wrapper :hover{
+  background-position: 0 -100%;
+  color:#3E6559;
+ 
+}
+
+.file-upload i{
+  margin-left: -2.5%;
+}
+@media only screen and (max-width:1440px){
+  form p{
+    margin-left: 15%;
+  
+  }
+}
+
+@media only screen and (max-width:1024px){
+  form{
+    margin-top: 45%;
+    width: 50%;
+  }
+  form p{
+    margin-left: 20%;
+  
+  }
+}
+
+@media only screen and (max-width:1024px){
+  form{
+    margin-top: 55%;
+    width: 60%;
+  }
+  form p{
+    margin-left: 12.5%;
+  
+  }
+}
+
+@media only screen and (max-width:425px){
+  form{
+    margin-top: 95%;
+    width: 80%;
+  }
+  form p{
+    margin-left: 8.5%;
+  }
+  .input-group i{
+     margin-left: 10%;
+  }
+  .input-group input{
+    margin-left: 7.5%;
+  }
+}

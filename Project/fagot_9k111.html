@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Terrorism | Meele Weapons | 9K111 Fagot </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="template.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="https://img.icons8.com/ios/452/gun.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <nav>
+            <div>
+                <img src="photos/logoo.png" id="logo" alt="Logo">
+            </div>
+           <div class="tnav">
+             <div class="srch">
+                <button class="srchbtn"><i class="fa fa-fw fa-search"></i> Search</button>
+                <div class="srch-content">
+                  <form >
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Go for It</button>
+                  </form>
+               </div>
+             </div>
+                <a href="Team.html"><i class="fa fa-fw fa-heart"></i>Team</a>
+                <a href="report.html"><i class="fa fa-fw fa-line-chart"></i>About</a>
+                <a href="profile_page.html"><i class="fa fa-fw fa-user"></i> User</a>
+                <div class="stat">
+                   <button class="statbtn"><i class="fa fa-fw fa-bar-chart-o"></i> Statistics</button>
+                   <div class="stat-content">
+                        <a href="statistcs.html"> General</a> 
+                        <a href="worstattacks.html">Worst attacks</a> 
+                   </div>
+                </div>
+                <div class="weap">
+                    <button class="weapbtn" ><i class="fa fa-fw fa-bomb"></i> Weapons</button>
+                    <div class="weap-content">
+                        <a href="weapons.html">General</a>
+                        <a href="melee.html" >Melee Weapons</a> 
+                        <a href="pistols.html">Pistols</a> 
+                        <a href="shotguns.html">Shotguns</a> 
+                        <a href="rifles.html" >Rifles</a> 
+                        <a href="machineguns.html">Machine guns</a> 
+                        <a href="explosives.html">Explosives</a> 
+                     </div>
+                 </div> 
+                <a href="tw.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            </div>
+        </nav>
+        <div>
+            <div class="audio">
+                <img src="photos/song.png" id="press" alt="Song">
+            </div>
+        </div>
+ 
+            <div class="box">
+                <div>
+                <img src="explosives/ironrain_9k11_fagot.jpg" alt="9K111 Fagot">
+                </div>
+                <div><h1>9K111 FAGOT</h1></div>
+                <div class="txt">
+                    <p>Details:</p>
+                    <ul>
+                     <li>Place of Origin: Soviet Union  </li>
+                     <li>Type: Anti-tank guided missile launcher </li>
+                     <li>Warhead: High Explosive Anti-Tank (HEAT) warhead  </li>
+                     <li>Diameter: 120 mm  </li>
+                     <li>Effective Range: 70-2500 m  </li>
+                     <li>Feed System: 1 missile </li>
+                     <li>Material: Steel  </li>
+                    </ul>
+                </div>
+            </div>
+ 
+        <audio id="song">
+            <source src="music/ACDC_TNT.mp3" type="audio/mpeg">
+        </audio>
+
+        <script>
+           var song = document.getElementById("song");
+           var press = document.getElementById("press");
+
+           press.onclick = function(){
+               if(song.paused){
+                   song.play();
+               }else{
+                   song.pause();
+               }
+           }
+       </script>
+    </body>
+
+</html> 

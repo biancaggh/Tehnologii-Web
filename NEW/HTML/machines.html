@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Terrorism | Machine Guns </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="machines.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://www.iconsdb.com/icons/preview/white/gun-5-xxl.png" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script type="text/javascript" src="menu.js"></script>
+        <script type="text/javascript" src="filters.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Montserrat:300,400,600"
+          rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav" onclick="onClickBoth()">
+                <li><a href="home.html"><i class="fa fa-fw fa-home">Home</i></a></li>
+                <li><a href="weapons.html"><i class="fa fa-fw fa-bomb">Weapons</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-bar-chart-o">Statistics</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-exclamation-circle">Worst Attacks</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-user">User</i></a></li>
+                <li><a href="admin.html"><i class="fa fa-fw fa-user-secret">Admin</i></a></li>
+                <li><a href=""><i class="fa fa-fw fa-line-chart">About</i></a></li>
+                <li><a href=""><i class="fa fa-gw fa-heart"> Team</i></a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search..">
+            <a class="search-btn" href="">
+                <i class="fa fa-fw fa-search"></i>
+            </a>
+        </div>
+            <div class="filters">
+                
+                <button type="button" class="filter" id="filter" onclick="openSlide()">Filters</button>
+                <div class="side-slide" id="side-slide"> 
+                   <div id="filter-button">
+                      <button class="exit" id="exit" onclick="exitSlide()">&times;</button>
+                    <div>
+                        <button class="all" id="all">All</button><br>
+                        <button class="origin" id="origin" >Country of Origin</button><br>
+                        <div class="org" id="org">
+                            <button type="button" class="org-btn btn1">Belgium</button>
+                            <button type="button" class="org-btn btn2">China</button>
+                            <button type="button" class="org-btn btn3">Germany</button>
+                            <button type="button" class="org-btn btn4">Russia</button>
+                            <button type="button" class="org-btn btn5">USA</button>
+                        </div>
+                        <button class="typo" id="typo" >Type</button><br>
+                        <div class="types" id="types">
+                            <button type="button" class="type-btn btn1">General-purpose Machine Gun</button>
+                            <button type="button" class="type-btn btn2">Heavy Machine Gun</button>
+                            <button type="button" class="type-btn btn3">Light Machine Gun</button>
+                        </div>
+                        <button class="brand" id="brand" >Brand</button><br>
+                        <div class="brands" id="brands">
+                            <button type="button" class="btn1">Browing</button>
+                            <button type="button" class="btn2">Dectyaryov</button>
+                            <button type="button" class="btn3">DShK</button>
+                            <button type="button" class="btn4">FN</button>
+                            <button type="button" class="btn5">Kalashnikov</button>
+                            <button type="button" class="btn6">Mauser</button>
+                            <button type="button" class="btn7">Norinco</button>
+                            <button type="button" class="btn8">Zvezda</button>
+                        </div>
+                        <button class="length-btn" > Barrel Length</button><br>
+                        <div class="length" id="length">
+                            <div class="min-length">
+                                <input type="text" placeholder="Min Value"/>
+                            </div>
+                            <div class="max-length">
+                                <input type="text" placeholder="Max Value"/>
+                            </div>
+                        </div>
+                        <button class="cartridge" id="cartridge" >Cartridge</button>
+                        <div class="cartridge-btn" id="cartridge-btn">
+                            <button type="button" class="cartridge-btn1">5.45x39 mm</button>
+                            <button type="button" class="cartridge-btn2">5.56x45 mm</button>
+                            <button type="button" class="cartridge-btn3">7.62x39 mm</button>
+                            <button type="button" class="cartridge-btn4">7.62x51 mm</button>
+                            <button type="button" class="cartridge-btn5">7.62x54 mm</button>
+                            <button type="button" class="cartridge-btn6">12.7x99 mm</button>
+                            <button type="button" class="cartridge-btn7">12.7x108 mm</button>
+                        </div>
+                        <button class="feed" id="feed">Feeding System</button>
+                        <div class="feed-btn" id="feed-btn">
+                            <button type="button" class="feed1">30 Round Box Mag.</button>
+                            <button type="button" class="feed2">30 Round Curved Mag.</button>
+                            <button type="button" class="feed3">40 Round Curved Mag.</button>
+                            <button type="button" class="feed4">50 Round Non-Desintegrating Belt</button>
+                            <button type="button" class="feed5">50 Round Box Mag.</button>
+                            <button type="button" class="feed6">100 Round Belt.</button>
+                            <button type="button" class="feed7">100 Round Desintegrating Belt</button>
+                            <button type="button" class="feed8">200 Round Belt</button>
+                            <button type="button" class="feed9">200 Round Box</button>
+                            <button type="button" class="feed10">250 Round Belt</button>
+                        </div>
+                        <button class="range_ef" id="range_ef">Effective Range</button>
+                        <div class="range-btn" id="range-btn">
+                            <div class="range" id="range">
+                                <div class="min-range">
+                                    <input type="text" placeholder="Min Range"/>
+                                </div>
+                                <div class="max-range">
+                                    <input type="text" placeholder="Max Range"/>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="mat" id="mat">Material</button>
+                        <div class="feed-btn" id="feed-btn">
+                            <button type="button" class="mat1">Iron</button>
+                            <button type="button" class="mat2">Steel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="infos">
+                <h1>Machine</h1>
+                <h4>Guns</h4>
+            </div>
+            <div class="content1">
+                <img class="front" src="machine_guns/ironrain_browing.jpg" alt="">
+                 <a href="browing_m2.html">M2 BROWING </a>
+            </div>
+            <div class="content2">
+                <img class="front" src="machine_guns/ironrain_dshk.jpg" alt="">
+                 <a href="">DSHK </a>
+            </div>
+            <div class="content3">
+                <img class="front" src="machine_guns/ironrain_fn_minimi.jpg" alt="">
+                 <a href="">FN MINIMI </a>
+            </div>
+            <div class="content4">
+                <img class="front" src="machine_guns/ironrain_mauser.jpg" alt="">
+                 <a href="">MAUSER RHEINMETALL MG3 </a>
+            </div>
+            <div class="content5">
+                <img class="front" src="machine_guns/ironrain_norinco.jpg" alt="">
+                 <a href="">TYPE 80 </a>
+            </div>
+            <div class="content6">
+                <img class="front" src="machine_guns/ironrain_nsv.jpg" alt="">
+                 <a href="">NSV UTES </a>
+            </div>
+            <div class="content7">
+                <img class="front" src="machine_guns/ironrain_pkm.jpg" alt="">
+                 <a href="">PKM KALASHNIKOV  </a>
+            </div>
+            <div class="content8">
+                <img class="front" src="machine_guns/ironrain_rpd.jpg" alt="">
+                 <a href="">Degtyarev RPD </a>
+            </div>
+            <div class="content9">
+                <img class="front" src="machine_guns/ironrain_rpk.jpg" alt="">
+                 <a href="">RPK-74 KALASHNIKOV </a>
+            </div>
+            <div class="content10">
+                <img class="front" src="machine_guns/ironrain_w85.jpg" alt="">
+                 <a href="">W85 </a>
+            </div>
+            
+        
+        <audio id="song">
+            <source src="music/LORN-ANVIL.mp3" type="audio/mpeg">
+        </audio>
+            
+    </body>
+</html>
